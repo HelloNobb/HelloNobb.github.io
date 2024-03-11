@@ -1,0 +1,6 @@
+@import "../../commons/commons.scss";
+
+.section {
+  @extend %set-section;
+  text-align: center;
+}

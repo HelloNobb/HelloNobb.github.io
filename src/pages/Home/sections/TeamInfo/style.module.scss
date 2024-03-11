@@ -1,0 +1,78 @@
+@import "../../commons/commons.scss";
+
+.section {
+  @extend %set-section;
+}
+
+.pc {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+.moblie {
+  align-self: center;
+  width: 320px;
+  margin-top: 20px;
+}
+
+.box {
+  background: $bg-noticeable;
+  width: 250px;
+  height: 282px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 30px;
+  > img {
+    width: 75px;
+    height: 75px;
+    margin: 30px;
+  }
+  > div:nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 10px;
+  }
+  > div:nth-child(3) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px 0px;
+  > div,
+  > span {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+
+.arrow {
+  position: absolute;
+  width: 494px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  bottom: 240px;
+  > svg {
+    display: inline-block;
+    width: 42px;
+    height: 50px;
+    color: #818181;
+    cursor: pointer;
+  }
+}

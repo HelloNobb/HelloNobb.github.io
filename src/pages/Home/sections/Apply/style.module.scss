@@ -1,0 +1,23 @@
+@import "../../commons/commons.scss";
+
+.section {
+  @extend %set-section;
+
+  align-items: center;
+}
+.apply {
+  background: $bg-noticeable;
+  border-radius: 10px;
+  width: 208px;
+  height: 67px;
+
+  margin: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.44a31581.css",
+    "main.js": "/static/js/main.7aca235f.js",
+    "static/js/787.c4d8b53b.chunk.js": "/static/js/787.c4d8b53b.chunk.js",
+    "static/media/weedoe.webp": "/static/media/weedoe.3bd1bb4a203003f84f56.webp",
+    "static/media/whisky.PNG": "/static/media/whisky.4884cbadd8043cdc399f.PNG",
+    "static/media/santa.PNG": "/static/media/santa.beeea09d47c2c9b7e83b.PNG",
+    "static/media/remember&recollect.PNG": "/static/media/remember&recollect.fc50fb75a3485895ad2d.PNG",
+    "static/media/woong.webp": "/static/media/woong.f36c1dd4669464f80d82.webp",
+    "static/media/shaking.webp": "/static/media/shaking.6324c0563b70460c976d.webp",
+    "static/media/summer.PNG": "/static/media/summer.d7685ac3bc1075ce997d.PNG",
+    "static/media/killingtag.PNG": "/static/media/killingtag.fade001a1e5a33479049.PNG",
+    "static/media/bread.PNG": "/static/media/bread.93a09af5fe54b12b678f.PNG",
+    "static/media/title.webp": "/static/media/title.62a616ffc0371636877d.webp",
+    "static/media/land.PNG": "/static/media/land.5a32a32ada4dcf2d7a13.PNG",
+    "static/media/colorme.JPG": "/static/media/colorme.41387ba4e15e09f47e84.JPG",
+    "static/media/곽현수.jpg": "/static/media/곽현수.a39ed53d9a7f4906ff44.jpg",
+    "static/media/황지민.jpg": "/static/media/황지민.7692d8f9b25626a18946.jpg",
+    "static/media/장영선.jpg": "/static/media/장영선.539ff375e5f49f056511.jpg",
+    "static/media/김예지.jpg": "/static/media/김예지.04f02d2b29594ceae4e2.jpg",
+    "static/media/윤수연.jpg": "/static/media/윤수연.98e099ba730e57dfd2bb.jpg",
+    "static/media/seongbaul.png": "/static/media/seongbaul.646ace0260c4e73c3697.png",
+    "static/media/홍성주.jpg": "/static/media/홍성주.d65ee136910e0cad1795.jpg",
+    "static/media/권유진.jpg": "/static/media/권유진.ba6eef0fcd1f7f65b424.jpg",
+    "static/media/designer_emoji.svg": "/static/media/designer_emoji.72158eafe532c0eb5ba1.svg",
+    "static/media/dev_emoji.svg": "/static/media/dev_emoji.c6955cfa68854d6aa1c6.svg",
+    "static/media/pm_emoji.svg": "/static/media/pm_emoji.de0517fe1a07cd9d67b5.svg",
+    "index.html": "/index.html",
+    "main.44a31581.css.map": "/static/css/main.44a31581.css.map",
+    "main.7aca235f.js.map": "/static/js/main.7aca235f.js.map",
+    "787.c4d8b53b.chunk.js.map": "/static/js/787.c4d8b53b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44a31581.css",
+    "static/js/main.7aca235f.js"
+  ]
+}

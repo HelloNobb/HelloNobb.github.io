@@ -1,0 +1,74 @@
+@import "../../commons/commons.scss";
+
+.section {
+  @extend %set-section;
+}
+
+.stepLayout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+
+  > div:nth-child(1),
+  > div:nth-child(3) {
+    margin-left: -20px;
+  }
+  > div:nth-child(2),
+  > div:nth-child(4) {
+    margin-left: 20px;
+  }
+
+  @media (max-width: 750px) {
+    path {
+      transform: translateY(10px);
+    }
+  }
+}
+
+.step {
+  z-index: 5;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 80%;
+
+  margin-top: 30px;
+
+  > div:first-child {
+    min-width: 38px;
+    min-height: 38px;
+    border-radius: 50%;
+
+    margin-right: 20px;
+
+    background: $bg-point;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    color: $bg;
+    text-align: center;
+    line-height: 32px;
+  }
+
+  @media (min-width: 750px) {
+    margin-top: 50px;
+
+    > div:first-child {
+      min-width: 60px;
+      min-height: 60px;
+      line-height: 56px;
+    }
+  }
+}
+
+.road {
+  position: absolute;
+}

@@ -1,0 +1,13 @@
+@import "./commons/commons.scss";
+
+#container {
+  @extend %set-font;
+
+  position: relative;
+  background: $bg;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

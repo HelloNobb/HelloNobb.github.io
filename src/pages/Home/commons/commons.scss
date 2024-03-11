@@ -1,0 +1,124 @@
+$bg: #121212;
+$bg-shadow: #1e1e1e;
+$bg-point: #e8e8e8;
+$bg-noticeable: linear-gradient(180deg, #3e7fff 0%, #0b46dc 100%);
+
+$pc-xxlarge: 50px;
+$pc-xlarge: 40px;
+$pc-large: 30px;
+$pc-medium: 25px;
+$pc-small: 20px;
+$pc-xsmall: 14px;
+
+$moblie-xxlarge: 30px;
+$moblie-xlarge: 26px;
+$moblie-large: 22px;
+$moblie-medium: 16px;
+$moblie-small: 14px;
+$moblie-xsmall: 12px;
+
+%set-font {
+  /* color */
+  color: white;
+
+  span {
+    color: #b4b4b4;
+  }
+
+  /* weight */
+  [font-size="xxlarge"],
+  [font-size="xlarge"],
+  [font-size="large"] {
+    font-weight: 400;
+  }
+
+  [font-size="xxlarge"],
+  [font-size="xlarge"],
+  [font-size="large"] {
+    font-weight: 600;
+  }
+
+  /* size */
+  @media (min-width: 390px) {
+    [font-size="xxlarge"] {
+      font-size: $moblie-xxlarge;
+    }
+    [font-size="xlarge"] {
+      font-size: $moblie-xlarge;
+    }
+    [font-size="large"] {
+      font-size: $moblie-large;
+    }
+    [font-size="medium"] {
+      font-size: $moblie-medium;
+    }
+    [font-size="small"] {
+      font-size: $moblie-small;
+    }
+    [font-size="xsmall"] {
+      font-size: $moblie-xsmall;
+    }
+  }
+
+  @media (min-width: 750px) {
+    [font-size="xxlarge"] {
+      font-size: $pc-xxlarge;
+    }
+    [font-size="xlarge"] {
+      font-size: $pc-xlarge;
+    }
+    [font-size="large"] {
+      font-size: $pc-large;
+    }
+    [font-size="medium"] {
+      font-size: $pc-medium;
+    }
+    [font-size="small"] {
+      font-size: $pc-small;
+    }
+    [font-size="xsmall"] {
+      font-size: $pc-xsmall;
+    }
+  }
+}
+
+%set-section {
+  position: relative;
+  height: calc(100vh - 52px);
+  color: white;
+
+  padding: 20px 0px;
+  border: 1px blue;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  @media (min-width: 390px) {
+    width: 390px;
+  }
+  @media (min-width: 750px) {
+    width: 750px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+%set-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px 0;
+
+  > div {
+    margin: 7.5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

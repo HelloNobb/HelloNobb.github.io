@@ -1,0 +1,14 @@
+@import "../../commons/commons.scss";
+
+.section {
+  @extend %set-section;
+  animation: none;
+
+  > img {
+    width: 100%;
+  }
+
+  @media (max-width: 750px) {
+    width: 100%;
+  }
+}

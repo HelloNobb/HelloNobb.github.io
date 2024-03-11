@@ -1,0 +1,319 @@
+#schedule h2 {
+  margin: 60px auto 33px auto;
+}
+
+#schedule .detail {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#schedule .detail .box {
+  background: #f3f3f3;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#schedule .detail .detail_name {
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+#schedule .detail .detail_period {
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.circle {
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  margin: auto;
+}
+
+#qualifiacation h2 {
+  margin: 60px auto 25px auto;
+}
+
+#qualifiacation .teamlist {
+  width: 100%;
+}
+
+#qualifiacation .teamname {
+  background: #4c88ff;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+#qualifiacation .teaminfo {
+  background: #f3f3f3;
+  border-radius: 10px;
+
+  font-weight: 500;
+}
+
+@media screen and (min-width: 390px) {
+  /* 모바일 */
+  #schedule h2 {
+    font-size: 25px;
+    margin-top: 120px;
+  }
+  #schedule .detail .box {
+    width: 267px;
+    height: 106px;
+    font-size: 16px;
+    margin: 0 auto 0px auto;
+  }
+
+  #schedule .details {
+    margin-bottom: 60px;
+  }
+  #schedule .detail .detail_name {
+    font-size: 16px;
+    margin: 26px auto 5px auto;
+  }
+
+  #schedule .detail .detail_period {
+    font-size: 16px;
+    margin: 5px auto 26px auto;
+  }
+  .circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -8px;
+    margin-bottom: -18px;
+  }
+  .triangle {
+    position: relative;
+    border-bottom: 0px solid transparent;
+    border-top: 12px solid #4c88ff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: 20px;
+  }
+
+  #qualifiacation .teamlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #qualifiacation .team {
+    margin-bottom: 10px;
+  }
+
+  #qualifiacation .teamname {
+    position: relative;
+    width: 91px;
+    height: 39px;
+    top: 15px;
+    left: 11px;
+
+    padding-top: 8px;
+    box-sizing: border-box;
+
+    font-size: 17px;
+    color: #ffffff;
+  }
+
+  #qualifiacation .teaminfo {
+    width: 319px;
+    padding: 30px 30px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  /* 태블릿  */
+  #schedule {
+    width: 100vw;
+  }
+  #schedule h2 {
+    margin: 80px auto 53px 40px;
+    font-size: 25px;
+  }
+
+  #schedule .details {
+    margin: 0px 40px 60px 40px;
+    display: flex;
+
+    overflow: scroll;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  #schedule .details::-webkit-scrollbar {
+    display: none;
+  }
+
+  #schedule .detail {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #schedule .detail .box {
+    width: 208px;
+    height: 139px;
+  }
+
+  #schedule .detail .detail_name {
+    font-size: 20px;
+  }
+
+  #schedule .detail .detail_period {
+    font-size: 20px;
+  }
+
+  .circle {
+    margin: 52px -10px;
+  }
+  .triangle {
+    position: relative;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: 12px solid #4c88ff;
+    border-right: 0px solid transparent;
+    left: 2px;
+    top: 17px;
+  }
+
+  #qualifiacation h2 {
+    margin: 80px auto 53px 40px;
+    font-size: 25px;
+  }
+
+  #qualifiacation .teamlist {
+    width: 100%;
+    display: block;
+    margin-bottom: 110px;
+  }
+
+  #qualifiacation .team {
+    width: auto;
+    height: fit-content;
+    display: flex;
+    margin: 0 40px 20px 40px;
+    /* margin-bottom: 20px; */
+  }
+
+  #qualifiacation .teamname {
+    position: static;
+    border-radius: 8px 0px 0px 8px;
+
+    width: 95px;
+    height: auto;
+
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  #qualifiacation .teaminfo {
+    width: fit-content;
+    background: #f3f3f3;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* 데스크탑 */
+  #schedule h2 {
+    font-size: 40px;
+    margin: 128px auto 69px;
+  }
+
+  #schedule .details {
+    display: flex;
+    margin: 0 auto 60px auto;
+  }
+
+  #schedule .detail {
+    margin: 0;
+  }
+
+  #schedule .detail .box {
+    width: 267px;
+    height: 178px;
+  }
+
+  #schedule .detail .detail_name {
+    font-size: 20px;
+  }
+
+  #schedule .detail .detail_period {
+    font-size: 20px;
+  }
+
+  .circle {
+    margin: 64px -10px;
+  }
+  .triangle {
+    position: relative;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: 12px solid #4c88ff;
+    border-right: 0px solid transparent;
+    left: 1px;
+  }
+
+  #qualifiacation h2 {
+    font-size: 40px;
+    margin: 128px auto 69px auto;
+  }
+
+  #qualifiacation .teamlist {
+    width: 100%;
+    display: block;
+  }
+
+  #qualifiacation .team {
+    display: flex;
+    margin: 0 auto 20px auto;
+    height: fit-content;
+  }
+
+  #qualifiacation .teamname {
+    position: static;
+    border-radius: 8px 0px 0px 8px;
+    width: 164.17px;
+    height: auto;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  #qualifiacation .teaminfo {
+    width: 994px;
+    /* padding: 30px 30px; */
+    font-size: 20px;
+    box-sizing: border-box;
+
+    background: #f3f3f3;
+    border-radius: 0px 10px 10px 0px;
+
+    font-weight: 500;
+  }
+}
+
+#qualifiacation {
+  margin-bottom: 120px;
+}

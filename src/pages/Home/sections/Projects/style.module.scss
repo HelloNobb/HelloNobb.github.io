@@ -1,0 +1,101 @@
+@import "../../commons/commons.scss";
+
+.section {
+  @extend %set-section;
+
+  > div:nth-child(2) {
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+}
+
+.projects {
+  height: 170px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > img {
+    width: 235px;
+    height: 142px;
+    filter: brightness(0.4);
+    border-radius: 10px;
+
+    position: absolute;
+  }
+  > [viewIdx="0"] {
+    width: 304px;
+    height: 170px;
+    filter: brightness(1);
+    z-index: 5;
+  }
+  @media (min-width: 750px) {
+    height: 286px;
+    > img {
+      width: 396px;
+      height: 240px;
+    }
+    > [viewIdx="0"] {
+      width: 511px;
+      height: 286px;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+
+  top: calc(50% + 30px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 10;
+
+  > div {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > svg {
+      display: inline-block;
+      width: 32px;
+      height: 37px;
+    }
+  }
+
+  @media (min-width: 750px) {
+    width: 640px;
+  }
+}
+
+.nav {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 50px;
+
+  > div {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #818181;
+  }
+  > [viewIdx="0"] {
+    background: white;
+  }
+}
