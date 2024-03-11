@@ -20,8 +20,11 @@
     "start": "react-scripts start",
     "build": "set \"BUILD_PATH=.\\docs\" && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
+  "homepage": "https://HelloNobb.github.io/HelloNobb.github.io/",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -45,5 +48,12 @@
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
     "webpack": "^5.76.1"
-  }
+  },
+  "description": "동덕여자대학교 게임개발동아리 NPC의 홍보 페이지입니다.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "author": "",
+  "license": "ISC"
 }
