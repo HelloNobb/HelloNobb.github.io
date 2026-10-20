@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section class="intro">
+  <p>[소개 문단: 어떤 개발자인지, 관심 분야, 강점을 2~4문장으로]</p>
+</section>
+
+<h2 class="section-title">프로젝트</h2>
+
+{% assign projects = site.projects | sort: "date" | reverse %}
+{% for p in projects %}
+<article class="project">
+  <h3><a href="{{ p.url | relative_url }}">{{ p.title }} ({{ p.date | date: "%Y" }})</a></h3>
+  {% if p.cover %}
+  <a href="{{ p.url | relative_url }}"><img src="{{ p.cover | relative_url }}" alt="{{ p.title }} 대표 이미지" loading="lazy"></a>
+  {% endif %}
+  <p class="summary">{{ p.summary }}</p>
+  {% include project-meta.html p=p %}
+  <a href="{{ p.url | relative_url }}">자세히 보기 →</a>
+</article>
+{% endfor %}

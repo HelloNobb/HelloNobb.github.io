@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.summary | default: site.tagline }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <p class="tagline">{{ site.tagline }}</p>
+    <nav>
+      <a href="{{ '/' | relative_url }}">프로젝트</a>
+      <a href="{{ '/resume/' | relative_url }}">이력서</a>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>© {{ site.time | date: "%Y" }} {{ site.title }}</footer>
+</body>
+</html>
