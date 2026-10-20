@@ -6,12 +6,10 @@ permalink: /resume/
 
 # Resume
 
-{% assign pdf = site.static_files | where: "path", "/assets/resume.pdf" | first %}
-{% if pdf %}<a class="button" href="{{ '/assets/resume.pdf' | relative_url }}" download>PDF download</a>{% endif %}
+<a class="button" href="{{ '/assets/resume.pdf' | relative_url }}" download="김현지_이력서.pdf">PDF download</a>
 
 <div class="resume-head">
   <h2>{{ site.title }}</h2>
-  <p class="muted">지원 직무: 크래프톤 Game Development - Programming (인턴)</p>
   <blockquote>{{ site.slogan | newline_to_br }}</blockquote>
   <ul class="contact">
     <li>이메일: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>

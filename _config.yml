@@ -5,7 +5,7 @@ slogan: |                       # 줄바꿈이 그대로 표시됩니다
   첫 게임 출시로 아이디어가 플레이가 되는 즐거움을 알았고,
   1인 개발로 게임이 무너지지 않게 만드는 법을 배웠습니다.
   이제는 측정과 구조로, 플레이어가 끊김 없이 즐기는 게임을 만들고 싶습니다.
-avatar: /assets/profile.jpg     # 프로필 사진 경로 (예: /assets/profile.jpg)
+avatar: /assets/avatar.jpg
 email: "khj59105@gmail.com"
 
 # 우측 상단 링크

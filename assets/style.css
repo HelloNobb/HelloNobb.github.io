@@ -74,8 +74,8 @@ nav a:hover, nav a.active { color: var(--strong); }
 main > h2 { margin-top: 48px; font-weight: 500; }
 
 /* About */
-.about { display: grid; grid-template-columns: 300px 1fr; gap: 48px; align-items: start; }
-.avatar { width: 100%; aspect-ratio: 413 / 531; object-fit: cover; }
+.about { display: grid; grid-template-columns: 180px 1fr; gap: 48px; align-items: start; }
+.avatar { width: 100%; aspect-ratio: 1; object-fit: cover; }
 .intro p { margin: 0 0 20px; }
 .lead { color: var(--strong); font-weight: 700; line-height: 1.8; }
 .contact { list-style: none; padding: 0; margin: 0; }
@@ -124,7 +124,7 @@ footer { margin-top: 96px; color: var(--muted); font-size: .8rem; letter-spacing
   .find-me { text-align: left; }
   .find-me a { margin: 0 20px 0 0; }
   .about, .project, .overview-item { grid-template-columns: 1fr; gap: 20px; }
-  .avatar { max-width: 220px; }
+  .avatar { max-width: 140px; }
   .section-title:not(:first-child) { margin-top: 64px; }
 }
 
@@ -137,3 +137,14 @@ blockquote { margin: 16px 0; padding-left: 20px; border-left: 2px solid var(--li
 .resume-project h3 { margin: 0 0 4px; font-size: 1.3rem; font-weight: 500; }
 .resume-project h3 a { color: var(--strong); }
 .resume-project p { margin: 0 0 4px; }
+
+/* Print (resume.pdf is generated from /resume/ with these rules) */
+@media print {
+  @page { margin: 14mm 16mm; }
+  body { font-size: 10.5pt; line-height: 1.6; background: #fff; }
+  .wrap { max-width: none; padding: 0; }
+  .site-header, footer, .button, main > h1 { display: none; }
+  .resume-head h2 { margin-top: 0; }
+  a { color: inherit; font-weight: inherit; }
+  h2, h3, h4 { break-after: avoid; }
+}
