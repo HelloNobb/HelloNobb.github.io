@@ -1,23 +1,25 @@
 ---
 layout: default
 ---
+<h1 class="section-title">About</h1>
+
 <section class="about">
-  <img class="avatar" src="{{ site.avatar | relative_url }}" alt="프로필 사진" width="160" height="160">
+  <img class="avatar" src="{{ site.avatar | relative_url }}" alt="프로필 사진" width="300" height="386">
   <div class="intro">
-    <h2>{{ site.slogan }}</h2>
+    <p class="lead">{{ site.slogan }}</p>
     <p>[소개 문단: 어떤 개발자인지, 관심 분야, 강점을 2~4문장으로]</p>
-  </div>
-  <div class="contact">
-    <h2>Contact</h2>
-    <ul>
-      <li><a href="mailto:{{ site.email }}">E-mail</a>: {{ site.email }}</li>
+
+    <h2 class="sub-title">Contact</h2>
+    <ul class="contact">
+      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
       {% for link in site.links %}<li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a></li>{% endfor %}
     </ul>
   </div>
 </section>
 
+<h1 class="section-title">Projects</h1>
+
 <section class="overview">
-  <h2>Projects</h2>
   {% assign projects = site.projects | sort: "date" | reverse %}
   {% for p in projects %}
   <a class="overview-item" href="{{ '/portfolio/' | relative_url }}#{{ p.slug }}">

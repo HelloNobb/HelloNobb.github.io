@@ -6,7 +6,7 @@ permalink: /resume/
 
 # Resume
 
-<a class="button" href="{{ '/assets/resume.pdf' | relative_url }}" download>PDF 다운로드</a>
+<a class="button" href="{{ '/assets/resume.pdf' | relative_url }}" download>PDF download</a>
 
 ## 학력
 
