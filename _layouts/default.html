@@ -3,27 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.summary | default: site.tagline }}">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }} - {{ site.role }}</title>
+  <meta name="description" content="{{ page.summary | default: site.slogan }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-  <header class="site-header">
-    <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <p class="tagline">{{ site.tagline }}</p>
-    <nav>
-      <a href="{{ '/' | relative_url }}">프로젝트</a>
-      <a href="{{ '/resume/' | relative_url }}">이력서</a>
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
-    </nav>
-  </header>
+  <div class="wrap">
+    <header class="site-header">
+      <p class="find-me">
+        Find me at:
+        {% for link in site.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a>{% endfor %}
+      </p>
+      <div class="header-row">
+        <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }} - {{ site.role }}</a>
+        <nav>
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>About</a>
+          <a href="{{ '/resume/' | relative_url }}"{% if page.url == '/resume/' %} class="active"{% endif %}>Resume</a>
+          <a href="{{ '/portfolio/' | relative_url }}"{% if page.url == '/portfolio/' or page.collection == 'projects' %} class="active"{% endif %}>Portfolio</a>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    {{ content }}
-  </main>
+    <main>
+      {{ content }}
+    </main>
 
-  <footer>© {{ site.time | date: "%Y" }} {{ site.title }}</footer>
+    <footer>© {{ site.time | date: "%Y" }} {{ site.title }}</footer>
+  </div>
 </body>
 </html>

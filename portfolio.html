@@ -1,0 +1,9 @@
+---
+layout: default
+title: Portfolio
+permalink: /portfolio/
+---
+{% assign projects = site.projects | sort: "date" | reverse %}
+{% for p in projects %}
+  {% include project-block.html p=p button=true %}
+{% endfor %}

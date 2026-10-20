@@ -1,13 +1,8 @@
 ---
 layout: default
 ---
-<article class="project-detail">
-  <p><a href="{{ '/' | relative_url }}">← 프로젝트 목록</a></p>
-  <h1>{{ page.title }} ({{ page.date | date: "%Y" }})</h1>
-  <p class="summary">{{ page.summary }}</p>
-  {% if page.cover %}<img src="{{ page.cover | relative_url }}" alt="{{ page.title }} 대표 이미지" loading="lazy">{% endif %}
-  {% include project-meta.html p=page %}
-  <div class="content">
-    {{ content }}
-  </div>
-</article>
+<p><a href="{{ '/portfolio/' | relative_url }}">← Portfolio</a></p>
+{% include project-block.html p=page %}
+<div class="content">
+  {{ content }}
+</div>

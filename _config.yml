@@ -1,8 +1,16 @@
 # 사이트 기본 정보 — [대괄호] 부분을 실제 내용으로 바꾸세요.
 title: "[이름]"
-tagline: "[한 줄 소개]"
-email: "[이메일 주소]"
-github_username: "HelloNobb"
+role: "Game Client Programmer"
+slogan: "[슬로건]"
+avatar: /assets/profile.svg      # 프로필 사진 경로 (예: /assets/profile.jpg)
+email: "khj59105@gmail.com"
+
+# 우측 상단 링크
+links:
+  - name: GitHub
+    url: https://github.com/HelloNobb
+  - name: Blog
+    url: https://nobbs-it-study.tistory.com/
 lang: ko
 
 # _projects/ 폴더의 파일 하나 = 프로젝트 하나 (목록 + 상세 페이지 자동 생성)

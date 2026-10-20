@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 이력서
+title: Resume
 permalink: /resume/
 ---
 
-# 이력서
+# Resume
 
 <a class="button" href="{{ '/assets/resume.pdf' | relative_url }}" download>PDF 다운로드</a>
 

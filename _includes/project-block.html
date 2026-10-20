@@ -1,0 +1,26 @@
+{% assign p = include.p %}
+<article class="project" id="{{ p.slug }}">
+  <div class="project-text">
+    <h2>{{ p.title }} <span class="year">({{ p.date | date: "%Y" }})</span></h2>
+    <p class="summary">{{ p.summary }}</p>
+    <dl class="meta">
+      <dt>담당 역할</dt><dd>{{ p.role }}</dd>
+      <dt>팀 규모</dt><dd>{{ p.team }}</dd>
+      <dt>기간</dt><dd>{{ p.period }}</dd>
+      <dt>기술스택</dt><dd>{{ p.stack | join: ", " }}</dd>
+    </dl>
+    {% if p.points %}
+    <h4>기술 포인트</h4>
+    <ul>
+      {% for point in p.points %}<li>{{ point }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    <p class="links">
+      {% if p.links.github %}<a href="{{ p.links.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if p.links.video %}<a href="{{ p.links.video }}" target="_blank" rel="noopener">영상</a>{% endif %}
+      {% if p.links.play %}<a href="{{ p.links.play }}" target="_blank" rel="noopener">플레이</a>{% endif %}
+    </p>
+    {% if include.button %}<a class="button" href="{{ p.url | relative_url }}">Project overview</a>{% endif %}
+  </div>
+  {% if p.cover %}<img class="project-cover" src="{{ p.cover | relative_url }}" alt="{{ p.title }} 대표 이미지" loading="lazy">{% endif %}
+</article>

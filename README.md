@@ -6,8 +6,8 @@ Portfolio and resume site, built by GitHub Pages' built-in Jekyll. No build setu
 
 | What | File |
 |---|---|
-| Name, tagline, email, GitHub | `_config.yml` |
-| Intro paragraph | `index.html` |
+| Name, slogan, profile photo, email, top-right links | `_config.yml` |
+| Intro paragraph (ABOUT) | `index.html` |
 | Resume (web) | `resume.md` |
 | Resume (PDF) | `assets/resume.pdf` |
 | Projects | `_projects/*.md` |
@@ -20,7 +20,7 @@ Portfolio and resume site, built by GitHub Pages' built-in Jekyll. No build setu
 4. Leave a link (`github`, `video`, `play`) empty to hide its button.
 5. For images in the body, add `{: loading="lazy"}` after the image to lazy-load it.
 
-The list and the detail page update automatically on push.
+The ABOUT overview, the PORTFOLIO page and the detail page update automatically on push.
 
 ## Deploy
 
