@@ -14,7 +14,7 @@ Portfolio and resume site, built by GitHub Pages' built-in Jekyll. No build setu
 
 ## Add a project
 
-1. Copy `_projects/project-a.md` to `_projects/<slug>.md`. The slug becomes the URL: `/projects/<slug>/`.
+1. Copy an existing file such as `_projects/gloomy.md` to `_projects/<slug>.md`. The slug becomes the URL: `/projects/<slug>/`.
 2. Fill in the front matter. `date` decides the order (newest first); only the year is shown.
 3. Put media in `assets/projects/<slug>/` and point `cover` at it.
 4. Leave a link (`github`, `video`, `play`) empty to hide its button.

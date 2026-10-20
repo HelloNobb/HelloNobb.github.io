@@ -127,3 +127,13 @@ footer { margin-top: 96px; color: var(--muted); font-size: .8rem; letter-spacing
   .avatar { max-width: 220px; }
   .section-title:not(:first-child) { margin-top: 64px; }
 }
+
+/* Resume */
+blockquote { margin: 16px 0; padding-left: 20px; border-left: 2px solid var(--line); color: var(--strong); }
+.resume-head h2 { margin: 32px 0 0; font-size: 1.7rem; font-weight: 500; }
+.resume-head .muted { margin: 0; }
+.resume-project { padding: 24px 0; border-top: 1px solid var(--line); }
+.resume-project:first-child { border-top: 0; padding-top: 0; }
+.resume-project h3 { margin: 0 0 4px; font-size: 1.3rem; font-weight: 500; }
+.resume-project h3 a { color: var(--strong); }
+.resume-project p { margin: 0 0 4px; }

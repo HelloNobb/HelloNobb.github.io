@@ -6,8 +6,7 @@ layout: default
 <section class="about">
   <img class="avatar" src="{{ site.avatar | relative_url }}" alt="프로필 사진" width="300" height="386">
   <div class="intro">
-    <p class="lead">{{ site.slogan }}</p>
-    <p>[소개 문단: 어떤 개발자인지, 관심 분야, 강점을 2~4문장으로]</p>
+    <p class="lead">{{ site.slogan | newline_to_br }}</p>
 
     <h2 class="sub-title">Contact</h2>
     <ul class="contact">
