@@ -173,3 +173,9 @@ main > p.muted { margin: 0 0 8px; }
   a { color: inherit; font-weight: inherit; }
   h2, h3, h4 { break-after: avoid; }
 }
+
+/* Images inside project write-ups */
+.content img.phone { max-width: 320px; }
+.caption { margin: -8px 0 28px; font-size: .85rem; color: var(--muted); }
+.detail-cover { image-rendering: auto; }
+.overview-item img, .project-cover img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }

@@ -1,7 +1,7 @@
 ---
 title: "Turtle"
 date: 2026-05-01
-cover: /assets/projects/turtle/cover.gif
+cover: /assets/projects/turtle/cover.png
 summary: "아기 거북이로 바다를 탐험해 조력자를 모아 엄마 거북이를 구하는 수중 하이브리드 캐주얼 2D 게임"
 kind: "모바일 2D 게임"
 period: "2026.05 ~ 06"
@@ -37,10 +37,6 @@ links:
     - 플레이어 피격: 거리 비교, 접촉을 시작한 순간 1회만 판정
     - 벽: 물고기마다 감지하는 대신, 무리가 새 목표를 정할 때 경로에 레이캐스트 1회
 
-{% include img.html src="/assets/projects/turtle/profiler_before.webp" alt="최적화 전 Profiler" %}
-
-{% include img.html src="/assets/projects/turtle/profiler_after.webp" alt="최적화 후 Profiler" %}
-
 - **성과:**
   - 물고기 수나 밀집도와 관계없이 물리 비용이 늘지 않는 구조가 됐습니다.
   - 측정은 에디터 기준이며, 12.33ms 중 약 7ms는 에디터 자체 오버헤드입니다. 게임 코드 실행 시간은 2.08ms입니다.
@@ -49,6 +45,16 @@ links:
 | --- | --- | --- |
 | 물리 연산 | 37.14ms | 0ms |
 | CPU 프레임 시간 | 54.47ms (약 18FPS) | 12.33ms (약 81FPS) |
+
+{% include img.html src="/assets/projects/turtle/profiler_before.webp" alt="최적화 전 Profiler" %}
+
+최적화 전: 물고기 500마리, CPU 54.47ms. `Physics2D.FindNewContacts` 23.11ms
+{: .caption}
+
+{% include img.html src="/assets/projects/turtle/profiler_after.webp" alt="최적화 후 Profiler" %}
+
+최적화 후: CPU 12.33ms, 게임 코드(PlayerLoop) 2.08ms
+{: .caption}
 
 #### 2. 버튼 없이 한 동작에서 의도를 읽는 조작
 

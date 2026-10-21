@@ -14,8 +14,8 @@ stack:
   - "BE: Spring Boot, FastAPI"
   - "AI & Data: LangGraph, MariaDB, ChromaDB, AWS Bedrock, Titan Embedding"
 links:
-  github:
-  video:
+  github: https://github.com/PlayProbie
+  video: https://youtu.be/JSlvAlyyR48?si=tmMG0uA4ZxyKcmgz
   play:
 ---
 

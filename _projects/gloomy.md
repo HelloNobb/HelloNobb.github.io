@@ -1,7 +1,7 @@
 ---
 title: "Gloomy"
 date: 2025-01-01
-cover: /assets/projects/gloomy/cover.gif
+cover: /assets/projects/gloomy/cover.webp
 summary: "인조인간 '글루미'의 눈물로 키운 꽃을 마을에 심어 주민을 '정화'하는 방치형 육성 전략 시뮬레이션"
 kind: "모바일 2D 게임"
 period: "2025.01 ~ 현재"
@@ -13,6 +13,8 @@ links:
   video:
   play:
 ---
+
+{% include img.html src="/assets/projects/gloomy/screenshot.webp" alt="Gloomy 플레이 화면" class="phone" %}
 
 ## 핵심 성과
 
@@ -67,9 +69,9 @@ links:
 
 #### 3. 기획 도구와 게임을 잇는 대사 시스템
 
-{% include img.html src="/assets/projects/gloomy/dialogue-1.png" alt="대사 시스템 화면 1" %}
+{% include img.html src="/assets/projects/gloomy/dialogue-1.webp" alt="대사 시스템 화면 1" %}
 
-{% include img.html src="/assets/projects/gloomy/dialogue-2.png" alt="대사 시스템 화면 2" %}
+{% include img.html src="/assets/projects/gloomy/dialogue-2.webp" alt="대사 시스템 화면 2" %}
 
 - **문제:** 구버전은 대사 파일 형식이 3종이라 읽는 코드가 4곳에 따로 있었고, 타이핑 연출도 3벌이었습니다. 형식이 서로 맞지 않아 같은 기능 여러 버전으로 구현해야했으며, 기능 하나를 고치려면 여러 곳을 모두 고쳐야 했습니다.
 - **해결:**

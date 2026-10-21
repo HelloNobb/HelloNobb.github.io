@@ -1,7 +1,7 @@
 ---
 title: "Scriber"
 date: 2026-06-01
-cover: /assets/projects/scriber/cover.gif
+cover: /assets/projects/scriber/cover.webp
 summary: "기획자가 쓴 대사를 Unity 게임이 코드 수정 없이 그대로 읽게 해 주는 게임 기획 도구 (데스크톱·웹)"
 kind: "게임 기획 도구 (macOS 데스크톱 앱 + 웹 PWA)"
 period: "2026.06 ~ 10 (5개월)"
@@ -17,6 +17,16 @@ links:
   video:
   play:
 ---
+
+{% include img.html src="/assets/projects/scriber/relationship.webp" alt="Scriber 인물관계도" %}
+
+인물관계도
+{: .caption}
+
+{% include img.html src="/assets/projects/scriber/character.webp" alt="Scriber 캐릭터 도감" %}
+
+캐릭터 도감
+{: .caption}
 
 ## 핵심 성과
 
@@ -40,6 +50,11 @@ links:
   - 대사, 분기, 화자, 효과 수치, 연출 문구를 고쳐도 게임 코드는 그대로입니다. Scriber에서 내보낸 파일만 바꾸면 됩니다.
   - 빠진 연결은 플레이 도중이 아니라 재생 전에 목록으로 드러납니다.
   - 분기 연결, `requires` 정확성(안 쓰인 인물과 명령이 빠지는지), 설정표를 바꿔도 엔진 출력이 그대로인지를 자체 검사 코드로 확인합니다.
+
+{% include img.html src="/assets/projects/scriber/export.webp" alt="Scriber JSON 내보내기" %}
+
+JSON 내보내기: 엔진용 모드와 게임이 준비할 것(requires) 목록
+{: .caption}
 
 파일 예시
 
