@@ -9,8 +9,10 @@ permalink: /resume/
 <a class="button" href="{{ '/assets/resume.pdf' | relative_url }}" download="김현지_이력서.pdf">PDF download</a>
 
 <div class="resume-head">
-  <h2>{{ site.title }}</h2>
-  <blockquote>{{ site.slogan | newline_to_br }}</blockquote>
+  <div>
+    <h2>{{ site.title }}</h2>
+    <blockquote>{{ site.slogan | newline_to_br }}</blockquote>
+  </div>
   <ul class="contact">
     {% capture mailto %}mailto:{{ site.email }}{% endcapture %}
     <li>{% include link.html url=mailto label=site.email icon="mail" %}</li>
@@ -77,7 +79,7 @@ permalink: /resume/
 5인 · 풀스택 개발 \| 2025.12 ~ 2026.01 (5주) \| Spring Boot, FastAPI, React, MariaDB
 {: .muted}
 
-#### 구현
+#### 구현 및 성과
 
 게임 생성 → 설문 설계 → 설문 진행 (End-to-End)
 
