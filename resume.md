@@ -12,9 +12,10 @@ permalink: /resume/
   <h2>{{ site.title }}</h2>
   <blockquote>{{ site.slogan | newline_to_br }}</blockquote>
   <ul class="contact">
-    <li>이메일: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-    <li>블로그: <a href="https://nobbs-it-study.tistory.com/" target="_blank" rel="noopener">nobbs-it-study.tistory.com</a></li>
-    <li>깃허브: <a href="https://github.com/HelloNobb" target="_blank" rel="noopener">github.com/HelloNobb</a></li>
+    {% capture mailto %}mailto:{{ site.email }}{% endcapture %}
+    <li>{% include link.html url=mailto label=site.email icon="mail" %}</li>
+    <li>{% include link.html url="https://nobbs-it-study.tistory.com/" label="nobbs-it-study.tistory.com" icon="blog" %}</li>
+    <li>{% include link.html url="https://github.com/HelloNobb" label="github.com/HelloNobb" icon="github" %}</li>
   </ul>
 </div>
 
@@ -33,7 +34,7 @@ permalink: /resume/
 
 - 직접 만든 대사 작성 툴 'Scriber'와 Unity를 잇는 대사 시스템을 설계해, 구버전의 대사 형식 3종과 이를 읽던 코드 4곳을 규격 1개와 엔진 1개로 통합하고 대사 수정 시 코드 수정 0건 달성
 - 임시 파일에 먼저 쓰고 교체하는 원자적 저장과 백그라운드 전환 시 저장을 도입해, 5곳에 흩어진 저장을 파일 1개로 통일하고 강제 종료, 파일 손상에 대비
-- 싱글톤 직접 호출 70회로 참조가 뒤엉킨 구버전 구조를 단방향 레이어와 이벤트 구조로 재설계하고, 중복 구현, 하드코딩 등 붕괴 원인별 규칙을 문서화해 AI가 작성한 코드에도 동일하게 적용
+- 싱글톤 직접 호출 233회로 참조가 뒤엉킨 구버전 구조를 단방향 레이어와 이벤트 구조로 재설계하고, 중복 구현, 하드코딩 등 붕괴 원인별 규칙을 문서화해 AI가 작성한 코드에도 동일하게 적용
 - 9개 파일에 흩어진 시간 처리를 게임 시계 하나로 통합해, 배속·시간 점프로 하루 경과 테스트를 24시간 대기에서 버튼 1회로 단축
 - 구버전 Android APK 빌드(씬 15개) 후, 리부트 전 AI로 회색박스 프로토타입을 빠르게 먼저 구현해 재미를 먼저 검증
 
@@ -62,12 +63,12 @@ permalink: /resume/
 8인 · 팀장, 기획 리드, 클라이언트 개발 \| 2023.09 (2개월) \| Lua, Solar2D (Corona SDK)
 {: .muted}
 
-[Google Play](https://play.google.com/store/apps/details?id=com.solar2d.app.Computer_Escape&hl=ko){: target="_blank" rel="noopener"}
+{% include link.html url="https://play.google.com/store/apps/details?id=com.solar2d.app.Computer_Escape&hl=ko" label="Google Play" icon="play" %}
 
 #### 구현 및 성과
 
 - 스토리와 미니게임 기획을 이끌면서 로비 이동·카메라와 미니게임 1종을 직접 개발해, 8인 팀에서 2개월 만에 Google Play 출시까지 완주
-- 카메라·충돌 컴포넌트가 없는 엔진에서 카메라와 이동 제한을 직접 구현, 공용 이동 로직이 팀 씬 18개에서 재사용
+- 카메라 기능이 없는 엔진에서 화면보다 큰 맵의 카메라와 구역별 이동 제한을 직접 구현
 
 ### Play Probie
 

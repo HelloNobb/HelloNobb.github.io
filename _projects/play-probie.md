@@ -1,7 +1,14 @@
 ---
 title: "Play Probie"
 date: 2025-12-01
-cover: /assets/projects/play-probie/cover.gif
+cover: /assets/projects/play-probie/cover.webp
+gallery:
+  - src: /assets/projects/play-probie/cover.webp
+    caption: AI 심층 인터뷰
+  - src: /assets/projects/play-probie/questions.webp
+    caption: AI 질문 추천
+  - src: /assets/projects/play-probie/analysis.webp
+    caption: 결과 분석
 summary: "게임 테스터의 진짜 속마음을 이끌어내는 AI 기반 “플레이 테스트 솔루션”"
 highlights:
   - "**올인원 솔루션**: 플레이 테스트 및 설문조사의 설계, 진행, 결과 분석까지 하나로 통합"

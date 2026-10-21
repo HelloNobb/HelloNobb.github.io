@@ -36,8 +36,7 @@ pre, table { display: block; overflow-x: auto; }
 /* Header */
 .site-header { padding: 40px 0 0; margin-bottom: 64px; }
 .find-me { margin: 0 0 8px; text-align: right; font-family: var(--display); font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; }
-.find-me a { margin-left: 20px; color: var(--muted); font-weight: 400; }
-.find-me a:hover { color: var(--strong); }
+.find-me .icon-link { margin-left: 20px; }
 .site-name {
   display: block;
   font-family: var(--display);
@@ -149,7 +148,7 @@ footer { margin-top: 96px; color: var(--muted); font-size: .8rem; letter-spacing
   .site-header { margin-bottom: 40px; }
   nav { gap: 8px 24px; }
   .find-me { text-align: left; }
-  .find-me a { margin: 0 20px 0 0; }
+  .find-me .icon-link { margin: 0 20px 0 0; }
   .about, .project, .overview-item { grid-template-columns: 1fr; gap: 20px; }
   .avatar { max-width: 140px; }
   .section-title:not(:first-child) { margin-top: 64px; }
@@ -179,3 +178,17 @@ main > p.muted { margin: 0 0 8px; }
 .caption { margin: -8px 0 28px; font-size: .85rem; color: var(--muted); }
 .detail-cover { image-rendering: auto; }
 .overview-item img, .project-cover img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+
+/* Links: icon + small label */
+.icon-link { display: inline-flex; align-items: center; gap: 6px; font-family: var(--display), Pretendard, sans-serif; font-size: .8rem; font-weight: 500; letter-spacing: .04em; color: var(--muted); border: 0; vertical-align: middle; }
+.icon-link:hover { color: var(--accent); }
+.icon-link .icon { flex: none; }
+.contact li { margin: 2px 0; }
+
+/* Detail page image gallery (2 columns, click opens the original) */
+.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 16px; max-width: 880px; margin: 32px 0 0; }
+.gallery figure { margin: 0; }
+.gallery a { display: block; border: 0; }
+.gallery img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border: 1px solid var(--line); }
+.gallery figcaption { margin-top: 6px; font-size: .82rem; line-height: 1.5; color: var(--muted); }
+@media (max-width: 480px) { .gallery { grid-template-columns: 1fr; } }

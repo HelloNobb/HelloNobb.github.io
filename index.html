@@ -10,8 +10,9 @@ layout: default
 
     <h2 class="sub-title">Contact</h2>
     <ul class="contact">
-      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-      {% for link in site.links %}<li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a></li>{% endfor %}
+      {% capture mailto %}mailto:{{ site.email }}{% endcapture %}
+      <li>{% include link.html url=mailto label=site.email icon="mail" %}</li>
+      {% for link in site.links %}<li>{% include link.html url=link.url label=link.name icon=link.icon %}</li>{% endfor %}
     </ul>
   </div>
 </section>

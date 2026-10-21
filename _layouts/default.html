@@ -15,7 +15,7 @@
   <div class="wrap">
     <header class="site-header">
       <p class="find-me">
-        {% for link in site.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a>{% endfor %}
+        {% for link in site.links %}{% include link.html url=link.url label=link.name icon=link.icon %}{% endfor %}
       </p>
       <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }} - {{ site.role }}</a>
       <nav>

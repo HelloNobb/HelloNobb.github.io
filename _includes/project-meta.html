@@ -10,8 +10,8 @@
 </dl>
 {% if p.links.github or p.links.video or p.links.play %}
 <p class="links">
-  {% if p.links.github %}<a href="{{ p.links.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
-  {% if p.links.video %}<a href="{{ p.links.video }}" target="_blank" rel="noopener">영상</a>{% endif %}
-  {% if p.links.play %}<a href="{{ p.links.play }}" target="_blank" rel="noopener">플레이</a>{% endif %}
+  {% if p.links.github %}{% include link.html url=p.links.github label="GitHub" icon="github" %}{% endif %}
+  {% if p.links.video %}{% include link.html url=p.links.video label="영상" icon="video" %}{% endif %}
+  {% if p.links.play %}{% include link.html url=p.links.play label="플레이" icon="play" %}{% endif %}
 </p>
 {% endif %}

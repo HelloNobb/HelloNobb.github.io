@@ -8,6 +8,15 @@ period: "2026.06 ~ 10 (5개월)"
 team: "1인 (Claude Code와 협업)"
 role: "요구사항·데이터 구조·내보내기 규격 설계, 테스트, 배포 판단"
 stack: ["React 19", "Vite 5", "Electron 42", "Supabase (Postgres JSONB, OAuth, RLS)", "PWA", "Vercel"]
+gallery:                         # 상세 페이지 상단 2열 이미지 (클릭 시 원본)
+  - src: /assets/projects/scriber/cover.webp
+    caption: 대사 편집
+  - src: /assets/projects/scriber/relationship.webp
+    caption: 인물관계도
+  - src: /assets/projects/scriber/character.webp
+    caption: 캐릭터 도감
+  - src: /assets/projects/scriber/export.webp
+    caption: "JSON 내보내기: 엔진용 모드와 게임이 준비할 것(requires) 목록"
 features:
   - "씬별 대사·연출·선택지 분기·효과·명령 직관적 편집"
   - "캐릭터 도감, 인물관계도"
@@ -17,16 +26,6 @@ links:
   video:
   play:
 ---
-
-{% include img.html src="/assets/projects/scriber/relationship.webp" alt="Scriber 인물관계도" %}
-
-인물관계도
-{: .caption}
-
-{% include img.html src="/assets/projects/scriber/character.webp" alt="Scriber 캐릭터 도감" %}
-
-캐릭터 도감
-{: .caption}
 
 ## 핵심 성과
 
@@ -50,11 +49,6 @@ links:
   - 대사, 분기, 화자, 효과 수치, 연출 문구를 고쳐도 게임 코드는 그대로입니다. Scriber에서 내보낸 파일만 바꾸면 됩니다.
   - 빠진 연결은 플레이 도중이 아니라 재생 전에 목록으로 드러납니다.
   - 분기 연결, `requires` 정확성(안 쓰인 인물과 명령이 빠지는지), 설정표를 바꿔도 엔진 출력이 그대로인지를 자체 검사 코드로 확인합니다.
-
-{% include img.html src="/assets/projects/scriber/export.webp" alt="Scriber JSON 내보내기" %}
-
-JSON 내보내기: 엔진용 모드와 게임이 준비할 것(requires) 목록
-{: .caption}
 
 파일 예시
 

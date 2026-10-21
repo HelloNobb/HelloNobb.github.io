@@ -1,0 +1,2 @@
+{%- comment -%}Icon + small label link. url, label, icon (see icon.html){%- endcomment -%}
+<a class="icon-link" href="{{ include.url }}"{% unless include.url contains "mailto:" %} target="_blank" rel="noopener"{% endunless %}>{% include icon.html name=include.icon %}<span>{{ include.label }}</span></a>

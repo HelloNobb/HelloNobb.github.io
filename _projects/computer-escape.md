@@ -1,7 +1,12 @@
 ---
 title: "Computer Escape"
 date: 2023-07-01
-cover: /assets/projects/computer-escape/cover.gif
+cover: /assets/projects/computer-escape/cover.png
+gallery:
+  - src: /assets/projects/computer-escape/cover.png
+    caption: 타이틀 화면
+  - src: /assets/projects/computer-escape/gameplay.png
+    caption: 장미 방
 summary: "컴퓨터 속으로 빨려 들어간 주인공이 컴퓨터 바탕화면을 돌며 미니게임과 퍼즐을 풀고 탈출하는 모바일 방탈출 어드벤처 게임"
 kind: "모바일 2D 게임"
 period: "2023.07 ~ 09"

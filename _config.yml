@@ -12,8 +12,10 @@ email: "khj59105@gmail.com"
 links:
   - name: GitHub
     url: https://github.com/HelloNobb
+    icon: github
   - name: Blog
     url: https://nobbs-it-study.tistory.com/
+    icon: blog
 lang: ko
 
 # _projects/ 폴더의 파일 하나 = 프로젝트 하나 (목록 + 상세 페이지 자동 생성)
