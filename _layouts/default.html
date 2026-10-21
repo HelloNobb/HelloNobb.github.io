@@ -23,6 +23,12 @@
         <a href="{{ '/resume/' | relative_url }}"{% if page.url == '/resume/' %} class="active"{% endif %}>Resume</a>
         <a href="{{ '/portfolio/' | relative_url }}"{% if page.url == '/portfolio/' or page.collection == 'projects' %} class="active"{% endif %}>Portfolio</a>
       </nav>
+      {% if page.url == '/portfolio/' or page.collection == 'projects' %}
+      {% assign sub_projects = site.projects | sort: "date" | reverse %}
+      <nav class="sub-nav">
+        {% for p in sub_projects %}<a href="{{ p.url | relative_url }}"{% if page.url == p.url %} class="active"{% endif %}>{{ p.title }}</a>{% endfor %}
+      </nav>
+      {% endif %}
     </header>
 
     <main>

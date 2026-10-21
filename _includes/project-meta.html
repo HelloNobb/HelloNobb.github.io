@@ -1,0 +1,17 @@
+{% assign p = include.p %}
+{% assign stack_joined = p.stack | join: "|" %}
+<dl class="meta">
+  {% if p.kind %}<dt>종류</dt><dd>{{ p.kind }}</dd>{% endif %}
+  {% if p.period %}<dt>기간</dt><dd>{{ p.period }}</dd>{% endif %}
+  {% if p.team %}<dt>인원</dt><dd>{{ p.team }}</dd>{% endif %}
+  {% if p.role %}<dt>내 역할</dt><dd>{{ p.role }}</dd>{% endif %}
+  {% if p.stack %}<dt>기술 스택</dt><dd>{% if stack_joined contains ":" %}{{ p.stack | join: "<br>" }}{% else %}{{ p.stack | join: ", " }}{% endif %}</dd>{% endif %}
+  {% if include.full and p.features %}<dt>주요 기능</dt><dd>{{ p.features | join: "<br>" }}</dd>{% endif %}
+</dl>
+{% if p.links.github or p.links.video or p.links.play %}
+<p class="links">
+  {% if p.links.github %}<a href="{{ p.links.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+  {% if p.links.video %}<a href="{{ p.links.video }}" target="_blank" rel="noopener">영상</a>{% endif %}
+  {% if p.links.play %}<a href="{{ p.links.play }}" target="_blank" rel="noopener">플레이</a>{% endif %}
+</p>
+{% endif %}

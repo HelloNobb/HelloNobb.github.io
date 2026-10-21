@@ -1,0 +1,5 @@
+{%- comment -%}Renders an image only if the file exists in the repo; otherwise renders `fallback` (if given) or nothing.{%- endcomment -%}
+{%- assign f = site.static_files | where: "path", include.src | first -%}
+{%- if f -%}<img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy"{% if include.class %} class="{{ include.class }}"{% endif %}>
+{%- elsif include.fallback -%}<img src="{{ include.fallback | relative_url }}" alt="" loading="lazy"{% if include.class %} class="{{ include.class }}"{% endif %}>
+{%- endif -%}

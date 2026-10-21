@@ -21,12 +21,12 @@ layout: default
 <section class="overview">
   {% assign projects = site.projects | sort: "date" | reverse %}
   {% for p in projects %}
-  <a class="overview-item" href="{{ '/portfolio/' | relative_url }}#{{ p.slug }}">
-    {% if p.cover %}<img src="{{ p.cover | relative_url }}" alt="" loading="lazy">{% endif %}
+  <a class="overview-item" href="{{ p.url | relative_url }}">
+    {% include img.html src=p.cover fallback="/assets/projects/placeholder.svg" alt="" %}
     <div>
       <h3>{{ p.title }} <span class="year">({{ p.date | date: "%Y" }})</span></h3>
       <p>{{ p.summary }}</p>
-      <p class="muted">{{ p.role }} · {{ p.period }}</p>
+      <p class="muted">{% if p.role %}{{ p.role }} · {% endif %}{{ p.period }}</p>
     </div>
   </a>
   {% endfor %}
