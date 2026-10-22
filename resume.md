@@ -89,7 +89,7 @@ permalink: /resume/
 
 ## 기술 스택
 
-- **Client**: C#, Unity 6 (2D URP), Unity Profiler, C# Job System, Burst
+- **Client**: C#, Unity 6 (2D URP), Unity Profiler
 - **Server**: Java·Spring Boot, Python·FastAPI, MariaDB
 - **Language**: C, C#, Java, Python, TypeScript
 - **Tools**: Git, Claude Code
