@@ -1,5 +1,6 @@
 # 사이트 기본 정보 — [대괄호] 부분을 실제 내용으로 바꾸세요.
 title: "김현지"
+url: "https://hellonobb.github.io"   # 이력서 PDF의 포트폴리오 링크 등 절대 주소에 사용
 role: "Game Programmer"
 slogan: |                       # 줄바꿈이 그대로 표시됩니다
   플레이어가 끊김 없이 즐기는 게임을 만드는 개발자입니다.
