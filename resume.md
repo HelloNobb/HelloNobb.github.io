@@ -12,7 +12,7 @@ permalink: /resume/
 <div class="resume-head">
   <div>
     <h2>{{ site.title }}</h2>
-    <blockquote>{{ site.slogan | newline_to_br }}</blockquote>
+    <blockquote>{{ site.slogan | strip | newline_to_br }}</blockquote>
   </div>
   <ul class="contact">
     {% capture mailto %}mailto:{{ site.email }}{% endcapture %}

@@ -10,6 +10,9 @@
 
 * { box-sizing: border-box; }
 
+/* Reserve the scrollbar so pages of different length line up (no sideways jump between pages) */
+html { scrollbar-gutter: stable; }
+
 body {
   margin: 0;
   background: var(--bg);
@@ -63,8 +66,8 @@ nav a:hover, nav a.active { color: var(--strong); }
 
 /* Portfolio sub menu: project names under the main nav */
 .sub-nav { gap: 6px 28px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
-.sub-nav a { font-size: .78rem; letter-spacing: .12em; }
-.sub-nav a.active { border-bottom: 1px solid var(--strong); }
+.sub-nav a { font-size: .78rem; letter-spacing: .12em; border-bottom: 1px solid transparent; }
+.sub-nav a.active { border-bottom-color: var(--strong); }
 
 /* Section titles: thin uppercase, like "ABOUT" */
 .section-title, main > h1 {
@@ -161,8 +164,14 @@ footer { margin-top: 96px; color: var(--muted); font-size: .8rem; letter-spacing
 
 /* Resume */
 blockquote { margin: 16px 0; padding-left: 20px; border-left: 2px solid var(--line); color: var(--strong); }
+/* Resume slogan: heavy light-gray quote marks on both sides instead of the left bar */
+.resume-head blockquote { position: relative; margin: 14px 0 0; padding: 0 0 0 34px; border: 0; }
+.resume-head blockquote::before,
+.resume-head blockquote::after { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: 2.8rem; color: #cfcfcf; }
+.resume-head blockquote::before { content: "\201C"; position: absolute; left: 0; top: -.1em; line-height: 1; }
+.resume-head blockquote::after { content: "\201D"; display: inline-block; margin-left: 6px; line-height: 0; vertical-align: -.42em; }
 .resume-head { display: grid; grid-template-columns: 1fr auto; gap: 16px 40px; align-items: start; margin-top: 32px; }
-.resume-head h2 { margin: 0; font-size: 1.7rem; font-weight: 500; }
+.resume-head h2 { margin: 0; font-size: 2.1rem; font-weight: 500; }
 .resume-head .contact { padding-top: 6px; text-align: right; }
 .resume-head .contact .icon-link { font-size: .74rem; }
 /* Light divider above each resume section (프로젝트, 기술 스택, 학력, 자격증) */
@@ -174,6 +183,7 @@ main > p.muted { margin: 0 0 8px; }
 
 /* Print (resume.pdf is generated from /resume/ with these rules) */
 @media print {
+  li, p { break-inside: avoid; }
   @page { margin: 14mm 16mm; }
   body { font-size: 10.5pt; line-height: 1.6; background: #fff; }
   .wrap { max-width: none; padding: 0; }
