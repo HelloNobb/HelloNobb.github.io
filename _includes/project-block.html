@@ -6,5 +6,5 @@
     {% include project-meta.html p=p %}
     <a class="button" href="{{ p.url | relative_url }}">자세히 보기</a>
   </div>
-  <a class="project-cover" href="{{ p.url | relative_url }}">{% include img.html src=p.cover fallback="/assets/projects/placeholder.svg" alt="" %}</a>
+  <a class="project-cover" href="{{ p.url | relative_url }}">{% if p.thumb %}{% include img.html src=p.thumb alt="" class="thumb" %}{% else %}{% include img.html src=p.cover fallback="/assets/projects/placeholder.svg" alt="" %}{% endif %}</a>
 </article>

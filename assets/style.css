@@ -203,3 +203,13 @@ main > p.muted { margin: 0 0 8px; }
   .resume-head { grid-template-columns: 1fr; }
   .resume-head .contact { padding-top: 0; text-align: left; }
 }
+
+/* Explicit list thumbnail (front matter `thumb`): whole image, pixel art kept crisp */
+.overview-item img.thumb, .project-cover img.thumb { object-fit: contain; background: #fff; border: 1px solid var(--line); image-rendering: pixelated; }
+/* Before/after pair inside a write-up: full width, no crop */
+.content .gallery.compare { max-width: none; margin: 24px 0; }
+.content .gallery.compare img { aspect-ratio: auto; object-fit: initial; margin: 0; }
+
+/* Autoplay clips (front matter `clip`, or {% include video.html %} in a write-up) */
+video.clip { display: block; width: 100%; max-width: 880px; height: auto; margin: 32px 0 0; background: #000; }
+.content video.clip { margin: 20px 0; }

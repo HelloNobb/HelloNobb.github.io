@@ -46,15 +46,10 @@ links:
 | 물리 연산 | 37.14ms | 0ms |
 | CPU 프레임 시간 | 54.47ms (약 18FPS) | 12.33ms (약 81FPS) |
 
-{% include img.html src="/assets/projects/turtle/profiler_before.webp" alt="최적화 전 Profiler" %}
-
-최적화 전: 물고기 500마리, CPU 54.47ms. `Physics2D.FindNewContacts` 23.11ms
-{: .caption}
-
-{% include img.html src="/assets/projects/turtle/profiler_after.webp" alt="최적화 후 Profiler" %}
-
-최적화 후: CPU 12.33ms, 게임 코드(PlayerLoop) 2.08ms
-{: .caption}
+<div class="gallery compare">
+  <figure><a href="/assets/projects/turtle/profiler_before.webp" target="_blank" rel="noopener">{% include img.html src="/assets/projects/turtle/profiler_before.webp" alt="최적화 전 Profiler" %}</a><figcaption>최적화 전: 물고기 500마리, CPU 54.47ms. <code>Physics2D.FindNewContacts</code> 23.11ms</figcaption></figure>
+  <figure><a href="/assets/projects/turtle/profiler_after.webp" target="_blank" rel="noopener">{% include img.html src="/assets/projects/turtle/profiler_after.webp" alt="최적화 후 Profiler" %}</a><figcaption>최적화 후: CPU 12.33ms, 게임 코드(PlayerLoop) 2.08ms</figcaption></figure>
+</div>
 
 #### 2. 버튼 없이 한 동작에서 의도를 읽는 조작
 

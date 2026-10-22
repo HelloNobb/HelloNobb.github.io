@@ -23,7 +23,7 @@ layout: default
   {% assign projects = site.projects | sort: "date" | reverse %}
   {% for p in projects %}
   <a class="overview-item" href="{{ p.url | relative_url }}">
-    {% include img.html src=p.cover fallback="/assets/projects/placeholder.svg" alt="" %}
+    {% if p.thumb %}{% include img.html src=p.thumb alt="" class="thumb" %}{% else %}{% include img.html src=p.cover fallback="/assets/projects/placeholder.svg" alt="" %}{% endif %}
     <div>
       <h3>{{ p.title }} <span class="year">({{ p.date | date: "%Y" }})</span></h3>
       <p>{{ p.summary }}</p>
