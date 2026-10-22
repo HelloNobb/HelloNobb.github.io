@@ -242,7 +242,9 @@ main > p.muted { margin: 0 0 8px; }
 /* Autoplay clips (front matter `clip`, or {% include video.html %} in a write-up) */
 video.clip { display: block; width: 100%; max-width: 880px; height: auto; margin: 32px 0 0; background: #000; }
 .content video.clip { margin: 20px 0; }
-.detail-cover.phone { max-width: 320px; }
+.detail-cover.phone, video.clip.phone { max-width: 320px; }
+/* PORTFOLIO card: clip fills the 16:10 box, a vertical clip is shown whole with dark side bars */
+.project-cover video.clip { margin: 0; max-width: none; aspect-ratio: 16 / 10; object-fit: contain; background: #0f3438; }
 .avatar-wrap { margin: 0; }
 .nickname { margin-top: 8px; text-align: center; font-family: var(--display); font-size: .8rem; letter-spacing: .14em; color: var(--muted); }
 @media (max-width: 760px) { .avatar-wrap { max-width: 140px; } }

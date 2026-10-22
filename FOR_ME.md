@@ -181,7 +181,7 @@ links:                          # 비워두면 버튼이 안 보임
 | 프로젝트 이미지 | `assets/projects/<이름>/` | 파일 넣고 front matter나 본문에 경로 |
 | 본문 중간 이미지 | 프로젝트 `.md` 본문 | `{% include img.html src="/assets/projects/<이름>/파일.webp" alt="설명" %}` |
 | 이미지 캡션 | 프로젝트 `.md` 본문 | 이미지 다음 줄에 문장, 그 다음 줄에 `{: .caption}` |
-| 자동재생 영상 | `assets/projects/<이름>/clip.mp4` | front matter에 `clip: /assets/projects/<이름>/clip.mp4` |
+| 자동재생 영상 | `assets/projects/<이름>/clip.mp4` | front matter에 `clip: /assets/projects/<이름>/clip.mp4`. PORTFOLIO 카드 썸네일과 상세 상단에서 움직임. 세로 영상이면 `cover_class: phone` 추가 |
 | 기술 스택 칩 | 프로젝트 `stack:` / `resume.md` | 이력서: `{% include chips.html list="Unity 6|C#" %}` |
 | 메뉴 이름 | `_layouts/default.html` | `<nav>` 안 About / Resume / Portfolio |
 | 개요 라벨 ("종류", "내 역할") | `_includes/project-meta.html` | |
@@ -191,7 +191,7 @@ links:                          # 비워두면 버튼이 안 보임
 ```bash
 ffmpeg -i 원본.mov -t 15 -vf "scale=1280:-2,fps=30" -c:v libx264 -crf 26 -preset slow -pix_fmt yuv420p -an -movflags +faststart clip.mp4
 ```
-(ffmpeg 설치: `brew install ffmpeg`). 1분 넘는 영상은 YouTube에 올리고 `links.video`로 연결.
+(ffmpeg 설치: `brew install ffmpeg`, 이 맥에는 설치돼 있음). 세로 폰 화면 녹화는 `scale=720:-2`, `-crf 22`, fps 옵션 빼고(원본 60fps 유지) 하면 10초에 약 1.5MB. 정지 화면: `ffmpeg -ss 0.5 -i clip.mp4 -frames:v 1 -q:v 4 clip-poster.jpg`. 1분 넘는 영상은 YouTube에 올리고 `links.video`로 연결.
 
 **비공개 메모**: 사이트에 안 보이게 메모를 남기려면 `{% comment %}메모{% endcomment %}`. `<!-- -->`는 페이지 소스에 그대로 남으니 쓰지 말 것.
 

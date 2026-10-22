@@ -9,7 +9,7 @@ layout: default
     {% for h in page.highlights %}<li>{{ h | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>{% endfor %}
   </ul>
   {% endif %}
-  {% if page.clip %}{% include video.html src=page.clip webm=page.clip_webm poster=page.cover label=page.title %}{% endif %}
+  {% if page.clip %}{% include video.html src=page.clip webm=page.clip_webm poster=page.clip_poster class=page.cover_class label=page.title %}{% endif %}
   {% if page.gallery %}
   <div class="gallery">
     {% for g in page.gallery %}<figure><a href="{{ g.src | relative_url }}" target="_blank" rel="noopener">{% include img.html src=g.src alt=g.caption %}</a>{% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}</figure>{% endfor %}

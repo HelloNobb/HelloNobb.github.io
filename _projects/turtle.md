@@ -3,6 +3,9 @@ title: "Turtle"
 order: 1                        # 목록·세부 메뉴 순서 (작을수록 앞)
 date: 2026-05-01
 cover: /assets/projects/turtle/cover.png
+clip: /assets/projects/turtle/clip.mp4          # 플릭 조작 영상 (PORTFOLIO 카드 + 상세 상단 자동재생)
+clip_poster: /assets/projects/turtle/clip-poster.jpg
+cover_class: phone                               # 세로 영상이라 상세 상단 320px
 summary: "아기 거북이로 바다를 탐험해 조력자를 모아 엄마 거북이를 구하는 수중 하이브리드 캐주얼 2D 게임"
 kind: "모바일 2D 게임"
 period: "2026.05 ~ 06"
