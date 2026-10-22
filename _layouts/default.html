@@ -39,5 +39,7 @@
 
     <footer>© {{ site.time | date: "%Y" }} {{ site.title }}</footer>
   </div>
+  {% comment %}Visitor stats (only on the live site). Dashboard: https://hellonobb.goatcounter.com (login only){% endcomment %}
+  {% if site.goatcounter and jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
 </body>
 </html>
