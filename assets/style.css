@@ -85,6 +85,7 @@ main > h2 { margin-top: 48px; font-weight: 500; }
 .about { display: grid; grid-template-columns: 180px 1fr; gap: 48px; align-items: start; }
 .avatar { width: 100%; aspect-ratio: 1; object-fit: cover; }
 .intro p { margin: 0 0 20px; }
+.about-text { padding-left: 34px; font-size: .88rem; line-height: 1.85; color: var(--fg); }
 .contact { list-style: none; padding: 0; margin: 0; }
 
 /* Overview list (About) */
@@ -198,6 +199,10 @@ main > p.muted { margin: 0 0 8px; }
   .wrap { max-width: none; padding: 0; }
   .site-header, footer, .button, main > h1, .page-head { display: none; }
   .resume-head { margin-top: 0; }
+  .resume-head { column-gap: 20px; }
+  .resume-head .slogan { padding-left: 28px; font-size: 9pt; }
+  .resume-head .slogan::before, .resume-head .slogan::after { font-size: 2.2rem; }
+  .resume-head .contact { white-space: nowrap; }
   main > h2 { border-top-color: #e3e3e3; }
   a { color: inherit; font-weight: inherit; }
   h2, h3, h4 { break-after: avoid; }

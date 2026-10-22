@@ -11,8 +11,8 @@ layout: default
   <div class="intro">
     <blockquote class="slogan">{{ site.slogan | strip | newline_to_br }}</blockquote>
 
-    {% comment %}Reserved: space where Contact used to be. Put the next ABOUT item here.{% endcomment %}
-    <div class="about-extra"></div>
+    {% comment %}Short intro under the slogan: _config.yml `about`{% endcomment %}
+    <div class="about-extra">{% if site.about %}<p class="about-text">{{ site.about }}</p>{% endif %}</div>
   </div>
 </section>
 
