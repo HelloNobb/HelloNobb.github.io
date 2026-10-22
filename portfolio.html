@@ -5,7 +5,7 @@ permalink: /portfolio/
 ---
 <h1 class="section-title">Portfolio</h1>
 
-{% assign projects = site.projects | sort: "date" | reverse %}
+{% assign projects = site.projects | sort: "order" %}
 {% for p in projects %}
   {% include project-block.html p=p %}
 {% endfor %}

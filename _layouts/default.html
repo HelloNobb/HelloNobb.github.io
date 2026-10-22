@@ -15,7 +15,8 @@
   <div class="wrap">
     <header class="site-header">
       <p class="find-me">
-        {% for link in site.links %}{% include link.html url=link.url label=link.name icon=link.icon %}{% endfor %}
+        {% for link in site.links %}{% include link.html url=link.url label=link.name icon=link.icon icon_only=true %}{% endfor %}
+        {% capture mailto %}mailto:{{ site.email }}{% endcapture %}{% include link.html url=mailto label="Email" icon="mail" icon_only=true %}
       </p>
       <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }} - {{ site.role }}</a>
       <nav>
@@ -24,7 +25,7 @@
         <a href="{{ '/portfolio/' | relative_url }}"{% if page.url == '/portfolio/' or page.collection == 'projects' %} class="active"{% endif %}>Portfolio</a>
       </nav>
       {% if page.url == '/portfolio/' or page.collection == 'projects' %}
-      {% assign sub_projects = site.projects | sort: "date" | reverse %}
+      {% assign sub_projects = site.projects | sort: "order" %}
       <nav class="sub-nav">
         {% for p in sub_projects %}<a href="{{ p.url | relative_url }}"{% if page.url == p.url %} class="active"{% endif %}>{{ p.title }}</a>{% endfor %}
       </nav>

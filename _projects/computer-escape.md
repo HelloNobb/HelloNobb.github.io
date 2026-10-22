@@ -1,5 +1,6 @@
 ---
 title: "Computer Escape"
+order: 4                        # 목록·세부 메뉴 순서 (작을수록 앞)
 date: 2023-07-01
 cover: /assets/projects/computer-escape/cover.png
 gallery:
@@ -10,7 +11,7 @@ gallery:
 summary: "컴퓨터 속으로 빨려 들어간 주인공이 컴퓨터 바탕화면을 돌며 미니게임과 퍼즐을 풀고 탈출하는 모바일 방탈출 어드벤처 게임"
 kind: "모바일 2D 게임"
 period: "2023.07 ~ 09"
-team: "8인 (개발 5, 기획 2, 디자인 2)"
+team: "8인 (개발 5)"
 role: "팀장 + 기획 리드 + 개발"
 stack: ["Solar2D (Corona SDK)", "Lua"]
 links:

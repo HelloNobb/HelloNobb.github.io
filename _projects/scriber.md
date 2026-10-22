@@ -1,5 +1,6 @@
 ---
 title: "Scriber"
+order: 3                        # 목록·세부 메뉴 순서 (작을수록 앞)
 date: 2026-06-01
 cover: /assets/projects/scriber/cover.webp
 summary: "기획자가 쓴 대사를 Unity 게임이 코드 수정 없이 그대로 읽게 해 주는 게임 기획 도구 (데스크톱·웹)"

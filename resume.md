@@ -4,9 +4,10 @@ title: Resume
 permalink: /resume/
 ---
 
-# Resume
-
-<a class="button" href="{{ '/assets/resume.pdf' | relative_url }}" download="김현지_이력서.pdf">PDF download</a>
+<div class="page-head">
+  <h1 class="section-title">Resume</h1>
+  <a class="button small" href="{{ '/assets/resume.pdf' | relative_url }}" download="김현지_이력서.pdf">PDF download</a>
+</div>
 
 <div class="resume-head">
   <div>
@@ -65,7 +66,7 @@ permalink: /resume/
 8인 · 팀장, 기획 리드, 클라이언트 개발 \| 2023.09 (2개월) \| Lua, Solar2D (Corona SDK)
 {: .muted}
 
-{% include link.html url="https://play.google.com/store/apps/details?id=com.solar2d.app.Computer_Escape&hl=ko" label="Google Play" icon="play" %}
+{% include link.html url="https://play.google.com/store/apps/details?id=com.solar2d.app.Computer_Escape&hl=ko" label="Google Play" icon="googleplay" %}
 
 #### 구현 및 성과
 

@@ -4,7 +4,10 @@ layout: default
 <h1 class="section-title">About</h1>
 
 <section class="about">
-  <img class="avatar" src="{{ site.avatar | relative_url }}" alt="프로필 이미지" width="180" height="180">
+  <figure class="avatar-wrap">
+    <img class="avatar" src="{{ site.avatar | relative_url }}" alt="프로필 이미지" width="180" height="180">
+    {% if site.nickname %}<figcaption class="nickname">{{ site.nickname }}</figcaption>{% endif %}
+  </figure>
   <div class="intro">
     <p class="lead">{{ site.slogan | newline_to_br }}</p>
 
@@ -20,7 +23,7 @@ layout: default
 <h1 class="section-title">Projects</h1>
 
 <section class="overview">
-  {% assign projects = site.projects | sort: "date" | reverse %}
+  {% assign projects = site.projects | sort: "order" %}
   {% for p in projects %}
   <a class="overview-item" href="{{ p.url | relative_url }}">
     {% if p.thumb %}{% include img.html src=p.thumb alt="" class="thumb" %}{% else %}{% include img.html src=p.cover fallback="/assets/projects/placeholder.svg" alt="" %}{% endif %}

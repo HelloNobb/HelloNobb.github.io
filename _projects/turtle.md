@@ -1,5 +1,6 @@
 ---
 title: "Turtle"
+order: 1                        # 목록·세부 메뉴 순서 (작을수록 앞)
 date: 2026-05-01
 cover: /assets/projects/turtle/cover.png
 summary: "아기 거북이로 바다를 탐험해 조력자를 모아 엄마 거북이를 구하는 수중 하이브리드 캐주얼 2D 게임"

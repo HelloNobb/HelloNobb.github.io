@@ -15,7 +15,7 @@ layout: default
     {% for g in page.gallery %}<figure><a href="{{ g.src | relative_url }}" target="_blank" rel="noopener">{% include img.html src=g.src alt=g.caption %}</a>{% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}</figure>{% endfor %}
   </div>
   {% elsif page.clip == nil %}
-  {% include img.html src=page.cover alt=page.title class="detail-cover" %}
+  {% capture cover_class %}detail-cover {{ page.cover_class }}{% endcapture %}{% include img.html src=page.cover alt=page.title class=cover_class %}
   {% endif %}
 
   <h2>개요</h2>

@@ -1,5 +1,6 @@
 ---
 title: "Play Probie"
+order: 5                        # 목록·세부 메뉴 순서 (작을수록 앞)
 date: 2025-12-01
 cover: /assets/projects/play-probie/cover.webp
 gallery:
@@ -16,6 +17,7 @@ highlights:
 kind: "크래프톤 정글 '나만무' 웹 프로젝트"
 period: "2025.12 ~ 2026.01 (5주)"
 team: "5인 (풀스택 / 기능별 전담)"
+role: "풀스택 개발 · 게임 생성 → 설문 설계 → 설문 진행 (End-to-End)"
 stack:
   - "FE: React, TypeScript, Tailwind, Zustand"
   - "BE: Spring Boot, FastAPI"

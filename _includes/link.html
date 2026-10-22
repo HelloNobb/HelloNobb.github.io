@@ -1,2 +1,2 @@
-{%- comment -%}Icon + small label link. url, label, icon (see icon.html){%- endcomment -%}
-<a class="icon-link" href="{{ include.url }}"{% unless include.url contains "mailto:" %} target="_blank" rel="noopener"{% endunless %}>{% include icon.html name=include.icon %}<span>{{ include.label }}</span></a>
+{%- comment -%}Icon + small label link. url, label, icon (see icon.html). icon_only=true hides the label (kept as aria-label/tooltip).{%- endcomment -%}
+<a class="icon-link" href="{{ include.url }}"{% unless include.url contains "mailto:" %} target="_blank" rel="noopener"{% endunless %}{% if include.icon_only %} aria-label="{{ include.label }}" title="{{ include.label }}"{% endif %}>{% include icon.html name=include.icon %}{% unless include.icon_only %}<span>{{ include.label }}</span>{% endunless %}</a>
