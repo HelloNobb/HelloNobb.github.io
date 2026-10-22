@@ -16,9 +16,9 @@ permalink: /resume/
   </div>
   <ul class="contact">
     {% capture mailto %}mailto:{{ site.email }}{% endcapture %}
-    <li>{% include link.html url=mailto label=site.email icon="mail" %}</li>
-    <li>{% include link.html url="https://nobbs-it-study.tistory.com/" label="nobbs-it-study.tistory.com" icon="blog" %}</li>
-    <li>{% include link.html url="https://github.com/HelloNobb" label="github.com/HelloNobb" icon="github" %}</li>
+    <li>메일: <a href="{{ mailto }}">{{ site.email }}</a></li>
+    <li>블로그: <a href="https://nobbs-it-study.tistory.com/" target="_blank" rel="noopener">nobbs-it-study.tistory.com</a></li>
+    <li>깃허브: <a href="https://github.com/HelloNobb" target="_blank" rel="noopener">github.com/HelloNobb</a></li>
   </ul>
 </div>
 

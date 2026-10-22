@@ -1,0 +1,37 @@
+[
+  {
+    "title": "[게임분석] 놀동숲의 마을은 36 Byte다 (최적화 분석 1편)",
+    "url": "https://nobbs-it-study.tistory.com/81",
+    "date": "2026-09-28",
+    "summary": "한글 12글자짜리 마을 내가 매일 뛰어 다녀도 전부 돌아다니기에 너무 넓은 마을, 강도 있고 박물관도 있고 바다고 있는 마을. 이 지형 전체를 저장하는 데 36바…",
+    "thumb": "https://blog.kakaocdn.net/dn/QHJFe/dJMcagN3CmW/MUeOfVCnMt5OlhZnqFBAT0/img.png"
+  },
+  {
+    "title": "[게임분석] 놀동숲이 32MB 안에 들어갔다고?",
+    "url": "https://nobbs-it-study.tistory.com/80",
+    "date": "2026-09-14",
+    "summary": "이게 32MB에 담긴 컨텐츠 규모라고? 요즘이야 몇 GB짜리 게임도 흔해서 크게 신경 쓰지 않을 때가 많다. 그런데 갑자기 2005년으로 돌아가서 생각해 보면 이…",
+    "thumb": "https://blog.kakaocdn.net/dn/ceet0x/dJMcafBkhWp/F9WXqQhJy021WWK7Yn1peK/img.jpg"
+  },
+  {
+    "title": "[게임 분석] 70시간 플레이한 인디 개발자가 뜯어본 \"세피리아\"",
+    "url": "https://nobbs-it-study.tistory.com/79",
+    "date": "2026-09-07",
+    "summary": "일단 나는 다양한 장르보다는 내가 좋아하는 소수의 게임을 깊게 파는 게이머 이다. 힐링 스토리류나 2인용 게임들 위주. 그러다보니 기본적으로 게임을 좋아한다면 해…",
+    "thumb": "https://blog.kakaocdn.net/dn/bxDdaS/dJMcafup2cL/kjpLYjB49s228eovAb0kq1/img.png"
+  },
+  {
+    "title": "[게임 분석] 커피토크 Coffee Talk",
+    "url": "https://nobbs-it-study.tistory.com/78",
+    "date": "2026-03-30",
+    "summary": "분석 요소 기본 요소 게임 개요 코어 루프 스토리 연출 방식 단순 대화형 스토리 게임의 서사 전개 방식 엔딩 분기 방식 화면/게임요소 연출 방식 지루하지 않게 하…",
+    "thumb": "https://blog.kakaocdn.net/dn/1YIqV/dJMcaaY2BMB/CkdWtNPbAC37KJdM93tTS0/img.png"
+  },
+  {
+    "title": "[알고리즘] 최단경로 연습 (숨바꼭질)",
+    "url": "https://nobbs-it-study.tistory.com/77",
+    "date": "2026-03-19",
+    "summary": "https://www.acmicpc.net/problem/1697 백준_1697 / 숨바꼭질 / 실버1 / BFS (최단경로) 문제 분석 [ N (0~10만) -…",
+    "thumb": ""
+  }
+]

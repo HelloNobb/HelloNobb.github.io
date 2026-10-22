@@ -15,6 +15,7 @@
   <div class="wrap">
     <header class="site-header">
       <p class="find-me">
+        <span class="find-me-label">Contact</span>
         {% for link in site.links %}{% include link.html url=link.url label=link.name icon=link.icon icon_only=true %}{% endfor %}
         {% capture mailto %}mailto:{{ site.email }}{% endcapture %}{% include link.html url=mailto label="Email" icon="mail" icon_only=true %}
       </p>
