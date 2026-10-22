@@ -232,8 +232,17 @@ pandoc -f html -t docx https://hellonobb.github.io/resume/ -o ~/Desktop/김현�
 
 ### 7-5. 사진·전화번호가 들어간 비공개 이력서
 - **공개 사이트에는 사진, 휴대전화, 생년월일을 올리지 않는다.** 사이트의 PDF는 누구나 받을 수 있다.
-- 지원할 때 필요하면: 7-3처럼 Word로 받은 뒤 사진·연락처를 추가해 **내 컴퓨터에만** 저장하고 직접 첨부한다.
-- 그 파일을 이 저장소 폴더 안에 넣는다면 반드시 `.gitignore`에 추가해서 올라가지 않게 할 것.
+- 비공개 정보는 내 맥에만 있는 두 곳에 둔다 (둘 다 `.gitignore`라 push해도 안 올라감):
+  - `_data/private.yml`: `photo`, `phone`, `birth`
+  - `assets/private/photo.jpg`: 증명사진
+- 아래 명령 한 줄이면 사진·생년월일·전화번호가 들어간 이력서 PDF가 **바탕화면 `김현지_이력서.pdf`**로 저장된다 (10번의 로컬 Jekyll 설치 필요):
+  ```bash
+  cd ~/WebProjects/HelloNobb.github.io
+  .github/scripts/private_resume.sh
+  ```
+  다른 이름으로 저장하려면 뒤에 경로를 붙인다: `.github/scripts/private_resume.sh ~/Desktop/이력서.pdf`
+- 원리: `resume.md`가 `JEKYLL_ENV=private`로 빌드할 때만 `_data/private.yml`을 읽어 사진·생년월일·전화를 그린다. GitHub Pages(production)와 평소 로컬 빌드에서는 아무것도 안 나온다.
+- 이력서 내용을 고치면 공개 PDF(7-1)와 이 비공개 PDF를 둘 다 다시 만든다.
 
 ---
 

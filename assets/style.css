@@ -182,6 +182,9 @@ blockquote { margin: 16px 0; padding-left: 20px; border-left: 2px solid var(--li
 /* Light divider above each resume section (프로젝트, 기술 스택, 학력, 자격증) */
 main > h2 { padding-top: 28px; border-top: 1px solid var(--line); }
 .resume-head .muted { margin: 0; }
+/* Private build only (JEKYLL_ENV=private): ID photo before the name */
+.resume-head.with-photo { grid-template-columns: auto 1fr auto; }
+.resume-photo { width: 96px; aspect-ratio: 3 / 4; object-fit: cover; border: 1px solid var(--line); }
 main > h3 { margin: 48px 0 4px; font-size: 1.35rem; font-weight: 500; }
 main > h3 + p { margin: 0 0 4px; color: var(--strong); }
 main > p.muted { margin: 0 0 8px; }

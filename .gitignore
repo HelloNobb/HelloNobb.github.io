@@ -2,3 +2,7 @@ _site/
 .jekyll-cache/
 .DS_Store
 CLAUDE.md
+
+# Private resume data (photo, phone, birth date). Local only, never push.
+_data/private.yml
+assets/private/

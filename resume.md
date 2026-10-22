@@ -9,12 +9,17 @@ permalink: /resume/
   <a class="button small" href="{{ '/assets/resume.pdf' | relative_url }}" download="김현지_이력서.pdf">PDF download</a>
 </div>
 
-<div class="resume-head">
+{% comment %}Photo, phone, birth date come from _data/private.yml (gitignored) and only render with JEKYLL_ENV=private. See FOR_ME.md 7-5.{% endcomment %}
+{% if jekyll.environment == "private" %}{% assign me = site.data.private %}{% endif %}
+<div class="resume-head{% if me %} with-photo{% endif %}">
+  {% if me.photo %}<img class="resume-photo" src="{{ me.photo | relative_url }}" alt="증명사진">{% endif %}
   <div>
     <h2>{{ site.title }}</h2>
     <blockquote class="slogan">{{ site.slogan | strip | newline_to_br }}</blockquote>
   </div>
   <ul class="contact">
+    {% if me.birth %}<li>{% include icon.html name="calendar" %}<span>생년월일:</span> {{ me.birth }}</li>{% endif %}
+    {% if me.phone %}<li>{% include icon.html name="phone" %}<span>전화:</span> {{ me.phone }}</li>{% endif %}
     {% capture mailto %}mailto:{{ site.email }}{% endcapture %}
     <li>{% include icon.html name="mail" %}<span>메일:</span> <a href="{{ mailto }}">{{ site.email }}</a></li>
     <li>{% include icon.html name="blog" %}<span>블로그:</span> <a href="https://nobbs-it-study.tistory.com/" target="_blank" rel="noopener">nobbs-it-study.tistory.com</a></li>
