@@ -138,6 +138,7 @@ links:                          # 비워두면 버튼이 안 보임
   github: https://...
   video: https://...            # YouTube 등
   play: https://...             # Google Play
+  web: https://...              # 웹에서 바로 열리는 주소 (예: Vercel) → "웹에서 열기"
 ---
 
 ## 핵심 성과

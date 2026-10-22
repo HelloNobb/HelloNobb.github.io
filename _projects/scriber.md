@@ -23,6 +23,7 @@ features:
   - "캐릭터 도감, 인물관계도"
   - "JSON 내보내기"
 links:
+  web: https://nobb-scriber.vercel.app/
   github:
   video:
   play:

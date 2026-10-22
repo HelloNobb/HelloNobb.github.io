@@ -7,8 +7,9 @@
   {% if p.stack %}<dt>기술 스택</dt><dd>{% if include.full or p.stack_short == nil %}{% include chips.html items=p.stack %}{% else %}{% include chips.html items=p.stack_short more=true %}{% endif %}</dd>{% endif %}
   {% if include.full and p.features %}<dt>주요 기능</dt><dd>{{ p.features | join: "<br>" }}</dd>{% endif %}
 </dl>
-{% if p.links.github or p.links.video or p.links.play %}
+{% if p.links.web or p.links.github or p.links.video or p.links.play %}
 <p class="links">
+  {% if p.links.web %}{% include link.html url=p.links.web label="웹에서 열기" icon="link" %}{% endif %}
   {% if p.links.github %}{% include link.html url=p.links.github label="GitHub" icon="github" %}{% endif %}
   {% if p.links.video %}{% include link.html url=p.links.video label="영상" icon="video" %}{% endif %}
   {% if p.links.play %}{% include link.html url=p.links.play label="Google Play" icon="googleplay" %}{% endif %}
