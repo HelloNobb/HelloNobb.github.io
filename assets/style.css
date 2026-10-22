@@ -261,11 +261,11 @@ video.clip { display: block; width: 100%; max-width: 880px; height: auto; margin
 @media (max-width: 760px) { .home-columns { grid-template-columns: 1fr; gap: 56px; } }
 @media (max-width: 760px) { .home-columns { margin-top: 64px; } .home-columns .overview-item, .blog-item { grid-template-columns: 88px 1fr; } }
 
-/* Tech-stack badges (Shields.io images) */
-.badges { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px; vertical-align: middle; }
-img.badge { display: inline-block; height: 20px; width: auto; margin: 0; border: 0; }
-.badge-group { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; width: 100%; }
-.badge-group-label { min-width: 72px; font-size: .78rem; color: var(--muted); }
-.badge-more { padding: 0 4px; font-weight: 700; color: var(--muted); }
-main > p > .badges { margin: 2px 0 6px; }
-main > ul .badges { margin-left: 6px; }
+/* Tech-stack chips: light gray, text only, flow on the same line as surrounding text */
+.chips { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; vertical-align: middle; }
+.chip { display: inline-block; padding: 1px 8px; border-radius: 6px; background: #f0f0ef; color: var(--strong); font-family: Pretendard, sans-serif; font-size: .78rem; font-weight: 400; line-height: 1.7; white-space: nowrap; }
+.chip-group { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin-right: 10px; }
+.chip-group-label { font-size: .74rem; color: var(--muted); }
+.chip-more { padding: 0 2px; font-weight: 700; color: var(--muted); }
+main > p.muted .chips { margin-left: 8px; }
+main > ul .chips { margin-left: 8px; }

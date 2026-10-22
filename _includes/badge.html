@@ -1,6 +1,0 @@
-{%- comment -%}One tech badge. name: text as written in the stack list (looked up in _data/badges.yml).{%- endcomment -%}
-{%- assign badge_name = include.name | strip -%}
-{%- assign b = site.data.badges[badge_name] -%}
-{%- assign text = badge_name | replace: "-", "--" | replace: "_", "__" | url_encode | replace: "+", "%20" -%}
-{%- assign color = b.color | default: "6b7280" -%}
-<img class="badge" src="https://img.shields.io/badge/{{ text }}-{{ color }}?style=flat-square{% if b.logo and b.logo != "" %}&logo={{ b.logo }}&logoColor={{ b.logo_color | default: "white" }}{% endif %}" alt="{{ badge_name }}" height="20">

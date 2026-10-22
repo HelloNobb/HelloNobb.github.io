@@ -1,0 +1,17 @@
+{%- comment -%}
+Tech-stack chips (light gray, text only). Pass either items (an array from front matter) or list ("A|B|C").
+An item like "FE: React, TypeScript" becomes a labeled group, kept on the same line as the others.
+more=true adds a trailing "…" to show the list is shortened.
+{%- endcomment -%}
+{%- if include.list -%}{%- assign chip_items = include.list | split: "|" -%}{%- else -%}{%- assign chip_items = include.items -%}{%- endif -%}
+<span class="chips">
+{%- for chip_raw in chip_items -%}
+  {%- if chip_raw contains ":" -%}
+    {%- assign chip_parts = chip_raw | split: ":" -%}{%- assign chip_names = chip_parts[1] | split: "," -%}
+    <span class="chip-group"><span class="chip-group-label">{{ chip_parts[0] | strip }}</span>{% for chip_name in chip_names %}<span class="chip">{{ chip_name | strip }}</span>{% endfor %}</span>
+  {%- else -%}
+    <span class="chip">{{ chip_raw | strip }}</span>
+  {%- endif -%}
+{%- endfor -%}
+{%- if include.more -%}<span class="chip-more" title="전체 기술 스택은 상세 페이지에">…</span>{%- endif -%}
+</span>

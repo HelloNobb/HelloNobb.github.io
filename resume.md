@@ -30,10 +30,7 @@ permalink: /resume/
 
 **“우울한 인조인간의 눈물로 꽃을 키워 마을을 정화하는 방치형 육성 시뮬레이션 게임”**
 
-1인 · 기획·개발 \| 2025.01 ~ 진행중
-{: .muted}
-
-{% include badges.html list="Unity 6|C#" %}
+<p class="muted">1인 · 기획·개발 | 2025.01 ~ 진행중 {% include chips.html list="Unity 6|C#" %}</p>
 
 #### 구현 및 성과
 
@@ -47,10 +44,7 @@ permalink: /resume/
 
 **“아기 거북이로 수중 탐험과 조력자 수집을 통해 엄마를 구하는 모바일 2D 캐주얼 게임”**
 
-2인 · 기획·개발 \| 2026.05 ~ (2개월)
-{: .muted}
-
-{% include badges.html list="Unity 6|C#|Unity Profiler" %}
+<p class="muted">2인 · 기획·개발 | 2026.05 ~ (2개월) {% include chips.html list="Unity 6|C#|Unity Profiler" %}</p>
 
 #### 구현
 
@@ -67,10 +61,7 @@ permalink: /resume/
 
 **“컴퓨터 속에 갇힌 주인공이 미니게임과 퍼즐을 풀어 탈출하는 모바일 방탈출 어드벤처 게임”**
 
-8인 · 팀장, 기획 리드, 클라이언트 개발 \| 2023.09 (2개월)
-{: .muted}
-
-{% include badges.html list="Lua|Solar2D (Corona SDK)" %}
+<p class="muted">8인 · 팀장, 기획 리드, 클라이언트 개발 | 2023.09 (2개월) {% include chips.html list="Lua|Solar2D (Corona SDK)" %}</p>
 
 {% include link.html url="https://play.google.com/store/apps/details?id=com.solar2d.app.Computer_Escape&hl=ko" label="Google Play" icon="googleplay" %}
 
@@ -83,10 +74,7 @@ permalink: /resume/
 
 **“AI 기반 게임 플레이테스트 플랫폼”**
 
-5인 · 풀스택 개발 \| 2025.12 ~ 2026.01 (5주)
-{: .muted}
-
-{% include badges.html list="Spring Boot|FastAPI|React|MariaDB" %}
+<p class="muted">5인 · 풀스택 개발 | 2025.12 ~ 2026.01 (5주) {% include chips.html list="Spring Boot|FastAPI|React|MariaDB" %}</p>
 
 #### 구현 및 성과
 
@@ -97,10 +85,10 @@ permalink: /resume/
 
 ## 기술 스택
 
-- **Client** {% include badges.html list="C#|Unity 6 (2D URP)|Unity Profiler" %}
-- **Server** {% include badges.html list="Java|Spring Boot|Python|FastAPI|MariaDB" %}
-- **Language** {% include badges.html list="C|C#|Java|Python|TypeScript" %}
-- **Tools** {% include badges.html list="Git|Claude Code" %}
+- **Client** {% include chips.html list="C#|Unity 6 (2D URP)|Unity Profiler" %}
+- **Server** {% include chips.html list="Java|Spring Boot|Python|FastAPI|MariaDB" %}
+- **Language** {% include chips.html list="C|C#|Java|Python|TypeScript" %}
+- **Tools** {% include chips.html list="Git|Claude Code" %}
 
 ## 학력
 
