@@ -57,6 +57,35 @@ links:
 
 </details>
 
+<details markdown="1">
+<summary>코드 비교: 직접 호출에서 이벤트로</summary>
+
+- 구버전 `GloomyManager.cs`: 스탯 하나 바꾸는 함수가 UI 갱신과 파일 저장까지 직접 함
+
+```csharp
+public void SetGBlue(float setValue) {
+    currentGloomy.blue += setValue;
+    ...
+    BaseUIManager.instance?.UpdateGloomyBlue(currentGloomy.blue);  // 데이터가 UI를 직접 부름
+    SaveCurrentGloomy();  // 값이 바뀔 때마다 파일 쓰기
+}
+```
+
+- 리부트 `SaveService.cs` + `GameClock.cs`: 저장은 "곧 저장한다"는 이벤트만 보내고, 각자 자기 값을 기록
+
+```csharp
+// SaveService — 무엇을 저장할지 모르고, 어떻게 저장할지만 안다 ---------
+public event Action BeforeSave;
+...
+BeforeSave?.Invoke();  // 저장 직전에 알리기만 한다
+string json = JsonConvert.SerializeObject(Data);
+
+// GameClock — 자기 시각은 자기가 기록한다 ---------
+saveService.BeforeSave += WriteToState;
+```
+
+</details>
+
 #### 2. 시간을 한 곳에 모아 테스트 가능하게
 
 - **문제:**
