@@ -16,9 +16,9 @@ permalink: /resume/
   </div>
   <ul class="contact">
     {% capture mailto %}mailto:{{ site.email }}{% endcapture %}
-    <li>메일: <a href="{{ mailto }}">{{ site.email }}</a></li>
-    <li>블로그: <a href="https://nobbs-it-study.tistory.com/" target="_blank" rel="noopener">nobbs-it-study.tistory.com</a></li>
-    <li>깃허브: <a href="https://github.com/HelloNobb" target="_blank" rel="noopener">github.com/HelloNobb</a></li>
+    <li>{% include icon.html name="mail" %}<span>메일:</span> <a href="{{ mailto }}">{{ site.email }}</a></li>
+    <li>{% include icon.html name="blog" %}<span>블로그:</span> <a href="https://nobbs-it-study.tistory.com/" target="_blank" rel="noopener">nobbs-it-study.tistory.com</a></li>
+    <li>{% include icon.html name="github" %}<span>깃허브:</span> <a href="https://github.com/HelloNobb" target="_blank" rel="noopener">github.com/HelloNobb</a></li>
   </ul>
 </div>
 
@@ -30,8 +30,10 @@ permalink: /resume/
 
 **“우울한 인조인간의 눈물로 꽃을 키워 마을을 정화하는 방치형 육성 시뮬레이션 게임”**
 
-1인 · 기획·개발 \| 2025.01 ~ 진행중 \| Unity 6, C#
+1인 · 기획·개발 \| 2025.01 ~ 진행중
 {: .muted}
+
+{% include badges.html list="Unity 6|C#" %}
 
 #### 구현 및 성과
 
@@ -45,8 +47,10 @@ permalink: /resume/
 
 **“아기 거북이로 수중 탐험과 조력자 수집을 통해 엄마를 구하는 모바일 2D 캐주얼 게임”**
 
-2인 · 기획·개발 \| 2026.05 ~ (2개월) \| Unity 6, C#, Unity Profiler
+2인 · 기획·개발 \| 2026.05 ~ (2개월)
 {: .muted}
+
+{% include badges.html list="Unity 6|C#|Unity Profiler" %}
 
 #### 구현
 
@@ -63,8 +67,10 @@ permalink: /resume/
 
 **“컴퓨터 속에 갇힌 주인공이 미니게임과 퍼즐을 풀어 탈출하는 모바일 방탈출 어드벤처 게임”**
 
-8인 · 팀장, 기획 리드, 클라이언트 개발 \| 2023.09 (2개월) \| Lua, Solar2D (Corona SDK)
+8인 · 팀장, 기획 리드, 클라이언트 개발 \| 2023.09 (2개월)
 {: .muted}
+
+{% include badges.html list="Lua|Solar2D (Corona SDK)" %}
 
 {% include link.html url="https://play.google.com/store/apps/details?id=com.solar2d.app.Computer_Escape&hl=ko" label="Google Play" icon="googleplay" %}
 
@@ -77,8 +83,10 @@ permalink: /resume/
 
 **“AI 기반 게임 플레이테스트 플랫폼”**
 
-5인 · 풀스택 개발 \| 2025.12 ~ 2026.01 (5주) \| Spring Boot, FastAPI, React, MariaDB
+5인 · 풀스택 개발 \| 2025.12 ~ 2026.01 (5주)
 {: .muted}
+
+{% include badges.html list="Spring Boot|FastAPI|React|MariaDB" %}
 
 #### 구현 및 성과
 
@@ -89,10 +97,10 @@ permalink: /resume/
 
 ## 기술 스택
 
-- **Client**: C#, Unity 6 (2D URP), Unity Profiler
-- **Server**: Java·Spring Boot, Python·FastAPI, MariaDB
-- **Language**: C, C#, Java, Python, TypeScript
-- **Tools**: Git, Claude Code
+- **Client** {% include badges.html list="C#|Unity 6 (2D URP)|Unity Profiler" %}
+- **Server** {% include badges.html list="Java|Spring Boot|Python|FastAPI|MariaDB" %}
+- **Language** {% include badges.html list="C|C#|Java|Python|TypeScript" %}
+- **Tools** {% include badges.html list="Git|Claude Code" %}
 
 ## 학력
 

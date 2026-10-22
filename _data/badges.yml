@@ -1,0 +1,32 @@
+# Tech-stack badges (Shields.io). Key = text exactly as written in stack lists.
+# logo = Simple Icons slug (leave empty for none), color = hex without '#'.
+# Unknown names still render as a plain gray badge.
+"Unity 6":            { logo: unity, color: "000000" }
+"Unity 6 (URP 2D)":   { logo: unity, color: "000000" }
+"Unity 6 (2D URP)":   { logo: unity, color: "000000" }
+"Unity Profiler":     { logo: unity, color: "222222" }
+"C#":                 { logo: dotnet, color: "512BD4" }
+"C":                  { logo: c, color: "A8B9CC", logo_color: "000000" }
+"Java":               { logo: openjdk, color: "ED8B00" }
+"Python":             { logo: python, color: "3776AB" }
+"TypeScript":         { logo: typescript, color: "3178C6" }
+"Lua":                { logo: lua, color: "2C2D72" }
+"Solar2D (Corona SDK)": { logo: "", color: "F26B21" }
+"React":              { logo: react, color: "20232A", logo_color: "61DAFB" }
+"React 19":           { logo: react, color: "20232A", logo_color: "61DAFB" }
+"Vite 5":             { logo: vite, color: "646CFF" }
+"Electron 42":        { logo: electron, color: "47848F" }
+"Supabase (Postgres JSONB, OAuth, RLS)": { logo: supabase, color: "3FCF8E", logo_color: "000000" }
+"PWA":                { logo: pwa, color: "5A0FC8" }
+"Vercel":             { logo: vercel, color: "000000" }
+"Tailwind":           { logo: tailwindcss, color: "06B6D4" }
+"Zustand":            { logo: "", color: "443E38" }
+"Spring Boot":        { logo: springboot, color: "6DB33F" }
+"FastAPI":            { logo: fastapi, color: "009688" }
+"LangGraph":          { logo: langchain, color: "1C3C3C" }
+"MariaDB":            { logo: mariadb, color: "003545" }
+"ChromaDB":           { logo: "", color: "FF6446" }
+"AWS Bedrock":        { logo: "", color: "FF9900", logo_color: "000000" }
+"Titan Embedding":    { logo: "", color: "232F3E" }
+"Git":                { logo: git, color: "F05032" }
+"Claude Code":        { logo: claude, color: "D97757" }

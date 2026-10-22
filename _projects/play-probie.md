@@ -16,6 +16,7 @@ kind: "크래프톤 정글 '나만무' 웹 프로젝트"
 period: "2025.12 ~ 2026.01 (5주)"
 team: "5인 (풀스택 / 기능별 전담)"
 role: "풀스택 개발 · 게임 생성 → 설문 설계 → 설문 진행 (End-to-End)"
+stack_short: ["React", "Spring Boot", "FastAPI", "MariaDB", "LangGraph"]   # 목록 카드용 대표 스택 (뒤에 … 표시). 상세 페이지는 전체 stack
 stack:
   - "FE: React, TypeScript, Tailwind, Zustand"
   - "BE: Spring Boot, FastAPI"

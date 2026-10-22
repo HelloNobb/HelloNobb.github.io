@@ -1,0 +1,17 @@
+{%- comment -%}
+Badge row. Pass either items (an array from front matter) or list ("A|B|C").
+An item like "FE: React, TypeScript" becomes a labeled group of badges.
+more=true adds a trailing "…" to show the list is shortened.
+{%- endcomment -%}
+{%- if include.list -%}{%- assign items = include.list | split: "|" -%}{%- else -%}{%- assign items = include.items -%}{%- endif -%}
+<span class="badges">
+{%- for raw in items -%}
+  {%- if raw contains ":" -%}
+    {%- assign parts = raw | split: ":" -%}{%- assign names = parts[1] | split: "," -%}
+    <span class="badge-group"><span class="badge-group-label">{{ parts[0] | strip }}</span>{% for group_item in names %}{% include badge.html name=group_item %}{% endfor %}</span>
+  {%- else -%}
+    {%- include badge.html name=raw -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if include.more -%}<span class="badge-more" title="전체 기술 스택은 상세 페이지에">…</span>{%- endif -%}
+</span>
