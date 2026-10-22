@@ -94,6 +94,7 @@ permalink: /resume/
 
 - **Client** {% include chips.html list="C#|Unity 6 (2D URP)|Unity Profiler" %}
 - **Server** {% include chips.html list="Java|Spring Boot|Python|FastAPI|MariaDB" %}
+- **Frontend** {% include chips.html list="React" %}
 - **Language** {% include chips.html list="C|C#|Java|Python|TypeScript" %}
 - **Tools** {% include chips.html list="Git|Claude Code" %}
 
