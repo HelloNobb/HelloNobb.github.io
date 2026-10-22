@@ -111,7 +111,7 @@ HelloNobb.github.io/
 ### 포트폴리오 프로젝트
 `_projects/turtle.md` 같은 파일 하나가 세 군데에 자동으로 들어간다.
 
-1. ABOUT의 Projects 목록 (썸네일, 제목, 한 줄 설명, 역할·기간)
+1. ABOUT의 Projects 목록 (썸네일, 제목, 한 줄 설명, 역할)
 2. PORTFOLIO 카드 목록 + 상단 세부 메뉴
 3. 상세 페이지 `/projects/turtle/`
 

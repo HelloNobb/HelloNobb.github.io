@@ -258,7 +258,10 @@ video.clip { display: block; width: 100%; max-width: 880px; height: auto; margin
 .blog-item img, .blog-thumb-empty { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border: 1px solid var(--line); }
 .blog-thumb-empty { display: block; background: #f2f2f2; }
 .blog-more { margin: 16px 0 0; text-align: right; }
-@media (max-width: 760px) { .home-columns { grid-template-columns: 1fr; gap: 56px; } }
+/* Both columns share the same row tracks, so item N on the left lines up with item N on the right */
+.home-columns { row-gap: 0; }
+.home-columns > section { display: grid; grid-template-rows: subgrid; grid-row: span var(--rows); }
+@media (max-width: 760px) { .home-columns { grid-template-columns: 1fr; gap: 56px; } .home-columns > section { display: block; grid-row: auto; } }
 @media (max-width: 760px) { .home-columns { margin-top: 64px; } .home-columns .overview-item, .blog-item { grid-template-columns: 88px 1fr; } }
 
 /* Tech-stack chips: light gray, text only, flow on the same line as surrounding text */

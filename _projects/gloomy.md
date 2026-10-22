@@ -5,7 +5,7 @@ date: 2025-01-01
 cover: /assets/projects/gloomy/screenshot.webp
 cover_class: phone                         # 세로 이미지라 상세 상단에서 폭 제한
 thumb: /assets/projects/gloomy/thumb.png   # 목록(ABOUT, PORTFOLIO)용 썸네일. 없으면 cover 사용
-summary: "인조인간 '글루미'의 눈물로 키운 꽃을 마을에 심어 주민을 '정화'하는 방치형 육성 전략 시뮬레이션"
+summary: "인조인간 '글루미'의 눈물로 키운 꽃을 마을에 심어 주민을 '정화'하는 방치형 육성 전략 시뮬레이션 게임"
 kind: "모바일 2D 게임"
 period: "2025.01 ~ 현재"
 team: "1인"
