@@ -70,9 +70,10 @@ links:
 
 #### 3. 기획 도구와 게임을 잇는 대사 시스템
 
-{% include img.html src="/assets/projects/gloomy/dialogue-1.webp" alt="대사 시스템 화면 1" %}
-
-{% include img.html src="/assets/projects/gloomy/dialogue-2.webp" alt="대사 시스템 화면 2" %}
+<div class="gallery compare">
+  <figure><a href="/assets/projects/gloomy/dialogue-1.webp" target="_blank" rel="noopener">{% include img.html src="/assets/projects/gloomy/dialogue-1.webp" alt="대사 시스템 화면 1" %}</a></figure>
+  <figure><a href="/assets/projects/gloomy/dialogue-2.webp" target="_blank" rel="noopener">{% include img.html src="/assets/projects/gloomy/dialogue-2.webp" alt="대사 시스템 화면 2" %}</a></figure>
+</div>
 
 - **문제:** 구버전은 대사 파일 형식이 3종이라 읽는 코드가 4곳에 따로 있었고, 타이핑 연출도 3벌이었습니다. 형식이 서로 맞지 않아 같은 기능 여러 버전으로 구현해야했으며, 기능 하나를 고치려면 여러 곳을 모두 고쳐야 했습니다.
 - **해결:**
