@@ -1,11 +1,11 @@
 {%- comment -%}
 Silent looping clip that plays like a moving image (no player UI).
-src: .mp4 (H.264) path, required. webm: optional smaller WebM version. poster: optional still shown before playback. class: optional extra class.
+src: .mp4 (H.264) path, required. webm: optional smaller WebM version. poster: optional still shown before playback. class: optional extra class. bg: optional side-bar color.
 Renders nothing if the mp4 file is missing.
 {%- endcomment -%}
 {%- assign f = site.static_files | where: "path", include.src | first -%}
 {%- if f -%}
-<video class="clip{% if include.class %} {{ include.class }}{% endif %}" autoplay muted loop playsinline preload="metadata"{% if include.poster %} poster="{{ include.poster | relative_url }}"{% endif %}{% if include.label %} aria-label="{{ include.label }}"{% endif %}>
+<video class="clip{% if include.class %} {{ include.class }}{% endif %}"{% if include.bg %} style="background: {{ include.bg }}"{% endif %} autoplay muted loop playsinline preload="metadata"{% if include.poster %} poster="{{ include.poster | relative_url }}"{% endif %}{% if include.label %} aria-label="{{ include.label }}"{% endif %}>
   {%- if include.webm %}<source src="{{ include.webm | relative_url }}" type="video/webm">{% endif -%}
   <source src="{{ include.src | relative_url }}" type="video/mp4">
 </video>

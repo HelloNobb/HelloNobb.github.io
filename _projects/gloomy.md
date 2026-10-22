@@ -4,6 +4,9 @@ order: 2                        # 목록·세부 메뉴 순서 (작을수록 앞
 date: 2025-01-01
 cover: /assets/projects/gloomy/screenshot.webp
 cover_class: phone                         # 세로 이미지라 상세 상단에서 폭 제한
+clip: /assets/projects/gloomy/clip.mp4     # 글루미 눈 깜빡임 영상 (PORTFOLIO 카드 + 상세 상단 자동재생)
+clip_poster: /assets/projects/gloomy/clip-poster.jpg
+clip_bg: "#2b1a2b"                         # PORTFOLIO 카드 양옆 여백 색
 thumb: /assets/projects/gloomy/thumb.png   # 목록(ABOUT, PORTFOLIO)용 썸네일. 없으면 cover 사용
 summary: "인조인간 '글루미'의 눈물로 키운 꽃을 마을에 심어 주민을 '정화'하는 방치형 육성 전략 시뮬레이션 게임"
 kind: "모바일 2D 게임"
