@@ -41,7 +41,7 @@
 | 자동화 | GitHub Actions + Python | 블로그 RSS → 최신 글 5개 저장 |
 | 이력서 PDF | Chrome 헤드리스 인쇄 | 이력서 웹페이지를 PDF로 변환 |
 
-직접 쓴 자바스크립트는 없다. 전부 정적 페이지라 빠르고 깨질 곳이 적다. 유일한 외부 스크립트는 방문 통계(GoatCounter, 아래 "방문 통계").
+직접 쓴 자바스크립트는 없다. 전부 정적 페이지라 빠르고 깨질 곳이 적다. 외부 스크립트는 방문 통계 두 개뿐 (GoatCounter, Microsoft Clarity. 아래 "방문 통계").
 
 ---
 
@@ -165,6 +165,13 @@ links:                          # 비워두면 버튼이 안 보임
 - **내 방문 빼기**: 기기·브라우저마다 한 번씩 https://hellonobb.github.io/#toggle-goatcounter 를 열고 확인 창에서 OK. 브라우저 데이터를 지우면 다시 해야 한다.
 - 지원서에 회사별 링크를 넣으면 유입 경로에서 구분된다: `https://hellonobb.github.io/?ref=회사이름`
 - 대시보드 Settings에서 public 통계 공개 옵션은 꺼 둔다 (기본값이 꺼짐).
+
+### 세션 녹화 (Microsoft Clarity)
+- 대시보드: https://clarity.microsoft.com (로그인). 방문 한 번 한 번을 영상처럼 다시 보기(Recordings), 페이지별 체류 시간, 스크롤·클릭 히트맵.
+- 설정 위치: `_config.yml`의 `clarity:` (프로젝트 ID, 비우면 꺼짐). 실제 사이트에서만 켜진다.
+- **내 방문 빼기**: GoatCounter와 같은 `#toggle-goatcounter`. DISABLED 상태인 브라우저는 Clarity도 안 켜진다.
+- 푸터의 "방문 분석에 Microsoft Clarity를 사용합니다" 문구는 Clarity 이용약관상 고지 의무라 지우지 않는다.
+- 녹화 찾기: Recordings 필터에서 Entry URL에 `ref=회사이름`, 또는 날짜·기기(Windows 등)로 좁힌다.
 
 ---
 

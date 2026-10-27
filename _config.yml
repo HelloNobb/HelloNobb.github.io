@@ -13,6 +13,7 @@ avatar: /assets/avatar.png
 nickname: "Nobb"              # 프로필 이미지 아래 작은 글씨
 email: "khj59105@gmail.com"
 goatcounter: hellonobb          # 방문 통계 (https://hellonobb.goatcounter.com, 로그인해야 보임). 비우면 꺼짐
+clarity: z4e6xzc01h             # Microsoft Clarity 프로젝트 ID (세션 녹화, https://clarity.microsoft.com). 비우면 꺼짐
 
 # 우측 상단 링크
 links:
