@@ -6,19 +6,18 @@ Portfolio and resume site, built by GitHub Pages' built-in Jekyll. No build setu
 
 | What | File |
 |---|---|
-| Name, slogan, profile photo, email, top-right links | `_config.yml` |
-| Intro paragraph (ABOUT) | `index.html` |
+| Name, slogan, intro paragraph (`about`), profile photo, email, top-right links | `_config.yml` |
 | Resume (web) | `resume.md` |
-| Resume (PDF) | `assets/resume.pdf` |
+| Resume (PDF) | `assets/resume.pdf` (regenerate after editing the resume or slogan, see `FOR_ME.md` 7) |
 | Projects | `_projects/*.md` |
 
 ## Add a project
 
 1. Copy an existing file such as `_projects/gloomy.md` to `_projects/<slug>.md`. The slug becomes the URL: `/projects/<slug>/`.
-2. Fill in the front matter. `date` decides the order (newest first); only the year is shown.
+2. Fill in the front matter. `order` decides the position everywhere (smaller first); `date` only supplies the year shown.
 3. Put media in `assets/projects/<slug>/` and point `cover` at it.
-4. Leave a link (`github`, `video`, `play`) empty to hide its button.
-5. For images in the body, add `{: loading="lazy"}` after the image to lazy-load it.
+4. Leave a link (`github`, `video`, `play`, `web`) empty to hide its button.
+5. For images in the body, use `{% include img.html src="/assets/projects/<slug>/file.webp" alt="..." %}`. It lazy-loads and skips missing files.
 
 The ABOUT overview, the PORTFOLIO page and the detail page update automatically on push.
 
