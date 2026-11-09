@@ -1,5 +1,12 @@
 [
   {
+    "title": "[게임 분석] 놀동숲이 36바이트에 마을과 음악을 담은 방법 (최적화 분석 3편)",
+    "url": "https://nobbs-it-study.tistory.com/entry/%EA%B2%8C%EC%9E%84-%EB%B6%84%EC%84%9D-%EB%86%80%EB%8F%99%EC%88%B2%EC%9D%B4-36%EB%B0%94%EC%9D%B4%ED%8A%B8%EC%97%90-%EB%A7%88%EC%9D%84%EA%B3%BC-%EC%9D%8C%EC%95%85%EC%9D%84-%EB%8B%B4%EC%9D%80-%EB%B0%A9%EB%B2%95-%EC%B5%9C%EC%A0%81%ED%99%94-%EB%B6%84%EC%84%9D-3%ED%8E%B8",
+    "date": "2026-11-09",
+    "summary": "INTRO 지난 1편에서 동숲의 지형 배치표는 36바이트라고 했다. 강이 어디로 흐르고, 바다가 어느 쪽에 있고, 어떤 땅 조각이 어디에 놓이는지. 거대한 지형을…",
+    "thumb": "https://blog.kakaocdn.net/dn/bVbnTq/dJMcaagtihq/SBI8A5NamQncbrsoKBy6uk/img.png"
+  },
+  {
     "title": "[게임 분석] 동숲 주민을 어떻게 \"살아있게\" 만들었나 (최적화 분석 2편)",
     "url": "https://nobbs-it-study.tistory.com/entry/%EA%B2%8C%EC%9E%84-%EB%B6%84%EC%84%9D-%EB%8F%99%EC%88%B2-%EC%A3%BC%EB%AF%BC%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%82%B4%EC%95%84%EC%9E%88%EA%B2%8C-%EB%A7%8C%EB%93%A4%EC%97%88%EB%82%98-%EC%B5%9C%EC%A0%81%ED%99%94-%EB%B6%84%EC%84%9D-2%ED%8E%B8",
     "date": "2026-11-02",
@@ -26,12 +33,5 @@
     "date": "2026-09-07",
     "summary": "일단 나는 다양한 장르보다는 내가 좋아하는 소수의 게임을 깊게 파는 게이머 이다. 힐링 스토리류나 2인용 게임들 위주. 그러다보니 기본적으로 게임을 좋아한다면 해…",
     "thumb": "https://blog.kakaocdn.net/dn/bxDdaS/dJMcafup2cL/kjpLYjB49s228eovAb0kq1/img.png"
-  },
-  {
-    "title": "[게임 분석] 커피토크 Coffee Talk",
-    "url": "https://nobbs-it-study.tistory.com/entry/%EA%B2%8C%EC%9E%84-%EB%B6%84%EC%84%9D-%EC%BB%A4%ED%94%BC%ED%86%A0%ED%81%AC-Coffee-Talk",
-    "date": "2026-03-30",
-    "summary": "분석 요소 기본 요소 게임 개요 코어 루프 스토리 연출 방식 단순 대화형 스토리 게임의 서사 전개 방식 엔딩 분기 방식 화면/게임요소 연출 방식 지루하지 않게 하…",
-    "thumb": "https://blog.kakaocdn.net/dn/1YIqV/dJMcaaY2BMB/CkdWtNPbAC37KJdM93tTS0/img.png"
   }
 ]
