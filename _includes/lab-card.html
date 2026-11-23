@@ -1,0 +1,6 @@
+{% assign item = include.item %}
+<a class="lab-card" href="{{ item.url | relative_url }}">
+  {% include img.html src=item.cover fallback="/assets/projects/placeholder.svg" alt="" %}
+  <h3>{{ item.title }}</h3>
+  <p>{{ item.summary }}</p>
+</a>

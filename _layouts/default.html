@@ -26,6 +26,7 @@
         <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>About</a>
         <a href="{{ '/resume/' | relative_url }}"{% if page.url == '/resume/' %} class="active"{% endif %}>Resume</a>
         <a href="{{ '/portfolio/' | relative_url }}"{% if page.url == '/portfolio/' or page.collection == 'projects' %} class="active"{% endif %}>Portfolio</a>
+        <a href="{{ '/lab/' | relative_url }}"{% if page.url == '/lab/' or page.collection == 'lab' %} class="active"{% endif %}>Lab</a>
       </nav>
       {% if page.url == '/portfolio/' or page.collection == 'projects' %}
       {% assign sub_projects = site.projects | sort: "order" %}

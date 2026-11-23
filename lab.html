@@ -1,0 +1,12 @@
+---
+layout: default
+title: Lab
+permalink: /lab/
+---
+<h1 class="section-title">Lab</h1>
+<p class="lab-intro">아이디어의 재미를 빠르게 검증하기 위해 AI로 만든 웹 프로토타입. 코드는 AI가 작성, 기획과 재미 판단은 직접. 누르면 바로 플레이 가능.</p>
+
+{% assign lab_items = site.lab | sort: "order" %}
+<div class="lab-grid">
+  {% for lab_item in lab_items %}{% include lab-card.html item=lab_item %}{% endfor %}
+</div>

@@ -49,10 +49,12 @@
 
 | 주소 | 메뉴 | 내용 | 만드는 파일 |
 |---|---|---|---|
-| `/` | ABOUT | 프로필 이미지 + Nobb, 슬로건, 아래 2단 (왼쪽 Projects / 오른쪽 Blog 최신 5개) | `index.html` |
+| `/` | ABOUT | 프로필 이미지 + Nobb, 슬로건, 아래 2단 (왼쪽 Projects / 오른쪽 Blog 최신 5개), 맨 아래 Lab 가로 한 줄 | `index.html` |
 | `/resume/` | RESUME | 이력서 웹 버전 + PDF 다운로드 버튼 | `resume.md` |
 | `/portfolio/` | PORTFOLIO | 프로젝트 카드 목록 + 상단 세부 메뉴(프로젝트 이름) | `portfolio.html` |
 | `/projects/<이름>/` | (세부 메뉴) | 프로젝트 상세 페이지 | `_projects/<이름>.md` |
+| `/lab/` | LAB | AI로 만든 웹 프로토타입 카드 목록 | `lab.html` |
+| `/lab/<이름>/` | (LAB 카드) | 프로토타입 상세 + 바로 플레이 (플레이 버튼 누르면 게임이 페이지 안에 뜸, 모바일은 새 탭) | `_lab/<이름>.md` |
 
 ---
 
@@ -186,12 +188,13 @@ links:                          # 비워두면 버튼이 안 보임
 | 프로젝트 내용 | `_projects/<이름>.md` | 위 형식대로 수정 |
 | 프로젝트 순서 | 각 `_projects/*.md` | `order:` 숫자 바꾸기 |
 | 새 프로젝트 추가 | `_projects/새이름.md` | 기존 파일 복사 → 내용 교체. 파일 이름 = 주소 (영어 소문자, 하이픈) |
+| LAB 프로토타입 추가 | `_lab/새이름.md` | 기존 파일 복사 → `title`, `order`, `cover`, `summary`, `play`(게임 주소), `stack` 교체. 세로 게임이면 `portrait: true`. 대표 이미지는 `assets/lab/<이름>/cover.png` 등 (16:10으로 잘려 보임) |
 | 프로젝트 이미지 | `assets/projects/<이름>/` | 파일 넣고 front matter나 본문에 경로 |
 | 본문 중간 이미지 | 프로젝트 `.md` 본문 | `{% include img.html src="/assets/projects/<이름>/파일.webp" alt="설명" %}` |
 | 이미지 캡션 | 프로젝트 `.md` 본문 | 이미지 다음 줄에 문장, 그 다음 줄에 `{: .caption}` |
 | 자동재생 영상 | `assets/projects/<이름>/clip.mp4` | front matter에 `clip: /assets/projects/<이름>/clip.mp4`. PORTFOLIO 카드 썸네일과 상세 상단에서 움직임. 세로 영상이면 `cover_class: phone` 추가 |
 | 기술 스택 칩 | 프로젝트 `stack:` / `resume.md` | 이력서: `{% include chips.html list="Unity 6|C#" %}` |
-| 메뉴 이름 | `_layouts/default.html` | `<nav>` 안 About / Resume / Portfolio |
+| 메뉴 이름 | `_layouts/default.html` | `<nav>` 안 About / Resume / Portfolio / Lab |
 | 개요 라벨 ("종류", "내 역할") | `_includes/project-meta.html` | |
 | 색, 폰트, 여백 | `assets/style.css` | 맨 위 `:root` 변수 (`--accent` = 링크 파란색 등) |
 

@@ -29,12 +29,20 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+  # _lab/ 폴더의 파일 하나 = 바로 플레이할 수 있는 웹 프로토타입 하나 (LAB 목록 + 상세 페이지)
+  lab:
+    output: true
+    permalink: /lab/:name/
 
 defaults:
   - scope:
       type: projects
     values:
       layout: project
+  - scope:
+      type: lab
+    values:
+      layout: lab
 
 exclude:
   - README.md

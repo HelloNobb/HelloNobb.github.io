@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="project-detail">
+  <h1 class="project-title">{{ page.title }}</h1>
+  <p class="tagline">{{ page.summary }}</p>
+  {% if page.stack %}<p>{% include chips.html items=page.stack %}</p>{% endif %}
+
+  {% comment %}The game loads only after a click (no CPU/sound on page open). Small screens and no-JS fall back to opening it in a new tab.{% endcomment %}
+  <div class="lab-play{% if page.portrait %} portrait{% endif %}">
+    <a class="lab-start" href="{{ page.play }}" target="_blank" rel="noopener">
+      {% include img.html src=page.cover alt="" %}
+      <span class="button">플레이</span>
+    </a>
+  </div>
+  <p class="lab-open">{% include link.html url=page.play label="새 탭에서 열기" icon="play" %}</p>
+
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
+<script>
+  document.querySelector('.lab-start').addEventListener('click', function (e) {
+    if (matchMedia('(max-width: 760px)').matches) return;
+    e.preventDefault();
+    var frame = document.createElement('iframe');
+    frame.src = this.href;
+    frame.title = {{ page.title | jsonify }};
+    frame.allow = 'fullscreen; autoplay';
+    this.replaceWith(frame);
+    frame.focus();
+  });
+</script>

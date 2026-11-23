@@ -52,3 +52,12 @@ layout: default
     {% if blog %}<p class="blog-more">{% include link.html url=blog.url label="블로그에서 더 보기" icon="blog" %}</p>{% endif %}
   </section>
 </div>
+
+{% comment %}LAB: playable web prototypes (_lab/), one horizontal row{% endcomment %}
+{% assign lab_items = site.lab | sort: "order" %}
+<section class="lab-home">
+  <h1 class="section-title"><a href="{{ '/lab/' | relative_url }}">Lab</a></h1>
+  <div class="lab-row">
+    {% for lab_item in lab_items %}{% include lab-card.html item=lab_item %}{% endfor %}
+  </div>
+</section>
