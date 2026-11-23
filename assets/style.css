@@ -297,7 +297,8 @@ main > ul .chips { margin-left: 8px; }
 .lab-home { margin-top: 40px; }
 .lab-home .section-title { margin: 0 0 16px; font-size: 1.4rem; }
 /* Section titles on ABOUT link to their full page */
-.home-columns .section-title a, .lab-home .section-title a { color: inherit; font-weight: inherit; }
+.home-columns .section-title a, .lab-home .section-title a { color: inherit; font-weight: inherit; border: 0; }
+.home-columns .section-title a:hover, .lab-home .section-title a:hover { color: var(--accent); }
 .lab-row { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 48px) / 3); gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; }
 .lab-row .lab-card { scroll-snap-align: start; }
 /* Detail page: cover + play button, swapped for the game iframe on click */
